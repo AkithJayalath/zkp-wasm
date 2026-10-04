@@ -1,4 +1,4 @@
-# Environment snapshot — 2026-10-03T20:32:17+05:30
+# Environment snapshot — 2026-10-04T10:58:50+05:30
 
 ## OS and kernel
 ```
@@ -6,7 +6,7 @@ Distributor ID:	Ubuntu
 Description:	Ubuntu 26.04.1 LTS
 Release:	26.04
 Codename:	resolute
-Linux akith-ThinkPad 7.0.0-30-generic #30-Ubuntu SMP PREEMPT_DYNAMIC Fri Jul 31 18:22:54 UTC 2026 x86_64 GNU/Linux
+Linux akith-ThinkPad 7.0.0-38-generic #38-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep  4 09:10:14 UTC 2026 x86_64 GNU/Linux
 ```
 ## CPU
 ```
@@ -59,15 +59,15 @@ Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspa
 ## CPU core layout (look for P-cores vs E-cores)
 ```
 CPU NODE SOCKET CORE L1d:L1i:L2:L3 ONLINE    MAXMHZ   MINMHZ       MHZ
-  0    0      0    0 0:0:0:0          yes 2600.0000 400.0000 2599.9741
-  1    0      0    1 1:1:1:0          yes 2600.0000 400.0000 2600.1130
-  2    0      0    0 0:0:0:0          yes 2600.0000 400.0000 2599.9980
-  3    0      0    1 1:1:1:0          yes 2600.0000 400.0000 2600.1479
+  0    0      0    0 0:0:0:0          yes 2600.0000 400.0000 2600.0071
+  1    0      0    1 1:1:1:0          yes 2600.0000 400.0000 2600.0840
+  2    0      0    0 0:0:0:0          yes 2600.0000 400.0000 2600.1240
+  3    0      0    1 1:1:1:0          yes 2600.0000 400.0000 2600.0271
 ```
 ## Memory
 ```
                total        used        free      shared  buff/cache   available
-Mem:            18Gi       3.0Gi       6.0Gi       530Mi        10Gi        15Gi
+Mem:            18Gi       4.4Gi        11Gi       802Mi       4.4Gi        14Gi
 Swap:          8.0Gi          0B       8.0Gi
 ```
 ## Power state

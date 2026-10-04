@@ -1,0 +1,479 @@
+Constraints per Poseidon: 415   fixed overhead: 0
+[c1_12] N = 9 hashes -> domain 2^12
+
+=== [c1_12] 1/9 compile with circom ===
+[32mtemplate instances[0m: 71
+non-linear constraints: 1944
+linear constraints: 1791
+public inputs: 0
+private inputs: 1
+public outputs: 1
+wires: 3737
+labels: 5233
+[32mWritten successfully:[0m build/c1_12/c1_12.r1cs
+[32mWritten successfully:[0m build/c1_12/c1_12.sym
+[32mWritten successfully:[0m build/c1_12/c1_12_cpp/c1_12.cpp and build/c1_12/c1_12_cpp/c1_12.dat
+[32mWritten successfully:[0m build/c1_12/c1_12_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m build/c1_12/c1_12_js/c1_12.wasm
+[32mEverything went okay[0m
+
+=== [c1_12] 2/9 circuit size ===
+{
+  "nConstraints": 3735,
+  "nPubInputs": 0,
+  "nPrvInputs": 1,
+  "nOutputs": 1,
+  "nVars": 3737,
+  "domainPower": 12,
+  "domain": 4096
+}
+
+=== [c1_12] 3/9 build the C++ witness generator ===
+fr.asm:8424: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+fr.asm:8427: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+fr.asm:8430: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+fr.asm:8433: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+
+=== [c1_12] 4/9 witness (native C++ and WASM) + constraint check ===
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   WITNESS CHECK
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:          bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars (wires):   3737
+[32;22m[INFO]  [39;1msnarkJS[0m:   Outputs:        1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public Inputs:  0
+[32;22m[INFO]  [39;1msnarkJS[0m:   Private Inputs: 1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Labels:         5233
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:    3735
+[32;22m[INFO]  [39;1msnarkJS[0m:   Custom Gates:   false
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking witness correctness
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS IS CORRECT
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING FINISHED SUCCESSFULLY
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   WITNESS CHECK
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:          bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars (wires):   3737
+[32;22m[INFO]  [39;1msnarkJS[0m:   Outputs:        1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public Inputs:  0
+[32;22m[INFO]  [39;1msnarkJS[0m:   Private Inputs: 1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Labels:         5233
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:    3735
+[32;22m[INFO]  [39;1msnarkJS[0m:   Custom Gates:   false
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking witness correctness
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS IS CORRECT
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING FINISHED SUCCESSFULLY
+
+=== [c1_12] 5/9 Groth16 setup (phase 2) ===
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit hash: 
+		7f86d0fb 913ac9b1 03fe0a3f e2dfc15f
+		9fe4a704 27815fe6 5fa0f238 ee1e65e9
+		757b5443 34fde3e5 3dd582d9 c8d275f5
+		ca6864b2 6e20b671 211396c1 211b1ba9
+
+=== [c1_12] 6/9 one phase-2 contribution ===
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit Hash: 
+		7f86d0fb 913ac9b1 03fe0a3f e2dfc15f
+		9fe4a704 27815fe6 5fa0f238 ee1e65e9
+		757b5443 34fde3e5 3dd582d9 c8d275f5
+		ca6864b2 6e20b671 211396c1 211b1ba9
+[32;22m[INFO]  [39;1msnarkJS[0m: Contribution Hash: 
+		6bcd78ab 5a543adc d8c23fd5 1ff01f2c
+		a16c2cab 5c8c1c5f c79776e0 d7e7837a
+		868dbd5b b6a6096a 003fd1b9 b106f0e7
+		a93ee615 575050be 30fb3f79 d0176854
+
+=== [c1_12] 7/9 export verification key ===
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: groth16
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+
+=== [c1_12] 8/9 sanity proof: Rapidsnark proves, SnarkJS verifies ===
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+
+=== [c1_12] 9/9 meta.json ===
+{
+  "nConstraints": 3735,
+  "nPubInputs": 0,
+  "nPrvInputs": 1,
+  "nOutputs": 1,
+  "nVars": 3737,
+  "domainPower": 12,
+  "domain": 4096,
+  "name": "c1_12",
+  "N": 9,
+  "zkeyBytes": 1630411
+}
+
+[c1_12] built OK
+[c1_14] N = 39 hashes -> domain 2^14
+
+=== [c1_14] 1/9 compile with circom ===
+[32mtemplate instances[0m: 71
+non-linear constraints: 8424
+linear constraints: 7761
+public inputs: 0
+private inputs: 1
+public outputs: 1
+wires: 16187
+labels: 22663
+[32mWritten successfully:[0m build/c1_14/c1_14.r1cs
+[32mWritten successfully:[0m build/c1_14/c1_14.sym
+[32mWritten successfully:[0m build/c1_14/c1_14_cpp/c1_14.cpp and build/c1_14/c1_14_cpp/c1_14.dat
+[32mWritten successfully:[0m build/c1_14/c1_14_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m build/c1_14/c1_14_js/c1_14.wasm
+[32mEverything went okay[0m
+
+=== [c1_14] 2/9 circuit size ===
+{
+  "nConstraints": 16185,
+  "nPubInputs": 0,
+  "nPrvInputs": 1,
+  "nOutputs": 1,
+  "nVars": 16187,
+  "domainPower": 14,
+  "domain": 16384
+}
+
+=== [c1_14] 3/9 build the C++ witness generator ===
+fr.asm:8424: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+fr.asm:8427: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+fr.asm:8430: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+fr.asm:8433: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+
+=== [c1_14] 4/9 witness (native C++ and WASM) + constraint check ===
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   WITNESS CHECK
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:          bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars (wires):   16187
+[32;22m[INFO]  [39;1msnarkJS[0m:   Outputs:        1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public Inputs:  0
+[32;22m[INFO]  [39;1msnarkJS[0m:   Private Inputs: 1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Labels:         22663
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:    16185
+[32;22m[INFO]  [39;1msnarkJS[0m:   Custom Gates:   false
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking witness correctness
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS IS CORRECT
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING FINISHED SUCCESSFULLY
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   WITNESS CHECK
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:          bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars (wires):   16187
+[32;22m[INFO]  [39;1msnarkJS[0m:   Outputs:        1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public Inputs:  0
+[32;22m[INFO]  [39;1msnarkJS[0m:   Private Inputs: 1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Labels:         22663
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:    16185
+[32;22m[INFO]  [39;1msnarkJS[0m:   Custom Gates:   false
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking witness correctness
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS IS CORRECT
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING FINISHED SUCCESSFULLY
+
+=== [c1_14] 5/9 Groth16 setup (phase 2) ===
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit hash: 
+		80901e38 0b5476ae 2af4e300 27748b4c
+		dcaa1daf 59b9e606 4ba62ace 4747a292
+		1d1bd261 cbf16c50 56998665 b4f07155
+		b88e46b8 23274c4d c5122def 6550dde5
+
+=== [c1_14] 6/9 one phase-2 contribution ===
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit Hash: 
+		80901e38 0b5476ae 2af4e300 27748b4c
+		dcaa1daf 59b9e606 4ba62ace 4747a292
+		1d1bd261 cbf16c50 56998665 b4f07155
+		b88e46b8 23274c4d c5122def 6550dde5
+[32;22m[INFO]  [39;1msnarkJS[0m: Contribution Hash: 
+		c8a065f8 9c3013b3 b3543422 886cf904
+		2db70815 8f600ceb b7a49a0f f94f28d6
+		07a2497b ba9b2db0 8147b703 3702e1d3
+		d79b1298 a1226dd4 7ce394e1 e104d299
+
+=== [c1_14] 7/9 export verification key ===
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: groth16
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+
+=== [c1_14] 8/9 sanity proof: Rapidsnark proves, SnarkJS verifies ===
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+
+=== [c1_14] 9/9 meta.json ===
+{
+  "nConstraints": 16185,
+  "nPubInputs": 0,
+  "nPrvInputs": 1,
+  "nOutputs": 1,
+  "nVars": 16187,
+  "domainPower": 14,
+  "domain": 16384,
+  "name": "c1_14",
+  "N": 39,
+  "zkeyBytes": 6971083
+}
+
+[c1_14] built OK
+[c1_16] N = 157 hashes -> domain 2^16
+
+=== [c1_16] 1/9 compile with circom ===
+[32mtemplate instances[0m: 71
+non-linear constraints: 33912
+linear constraints: 31243
+public inputs: 0
+private inputs: 1
+public outputs: 1
+wires: 65157
+labels: 91221
+[32mWritten successfully:[0m build/c1_16/c1_16.r1cs
+[32mWritten successfully:[0m build/c1_16/c1_16.sym
+[32mWritten successfully:[0m build/c1_16/c1_16_cpp/c1_16.cpp and build/c1_16/c1_16_cpp/c1_16.dat
+[32mWritten successfully:[0m build/c1_16/c1_16_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m build/c1_16/c1_16_js/c1_16.wasm
+[32mEverything went okay[0m
+
+=== [c1_16] 2/9 circuit size ===
+{
+  "nConstraints": 65155,
+  "nPubInputs": 0,
+  "nPrvInputs": 1,
+  "nOutputs": 1,
+  "nVars": 65157,
+  "domainPower": 16,
+  "domain": 65536
+}
+
+=== [c1_16] 3/9 build the C++ witness generator ===
+fr.asm:8424: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+fr.asm:8427: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+fr.asm:8430: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+fr.asm:8433: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+
+=== [c1_16] 4/9 witness (native C++ and WASM) + constraint check ===
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   WITNESS CHECK
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:          bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars (wires):   65157
+[32;22m[INFO]  [39;1msnarkJS[0m:   Outputs:        1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public Inputs:  0
+[32;22m[INFO]  [39;1msnarkJS[0m:   Private Inputs: 1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Labels:         91221
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:    65155
+[32;22m[INFO]  [39;1msnarkJS[0m:   Custom Gates:   false
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking witness correctness
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS IS CORRECT
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING FINISHED SUCCESSFULLY
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   WITNESS CHECK
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:          bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars (wires):   65157
+[32;22m[INFO]  [39;1msnarkJS[0m:   Outputs:        1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public Inputs:  0
+[32;22m[INFO]  [39;1msnarkJS[0m:   Private Inputs: 1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Labels:         91221
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:    65155
+[32;22m[INFO]  [39;1msnarkJS[0m:   Custom Gates:   false
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking witness correctness
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS IS CORRECT
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING FINISHED SUCCESSFULLY
+
+=== [c1_16] 5/9 Groth16 setup (phase 2) ===
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit hash: 
+		d2724afb 14f5d622 25a69c7f faef80e4
+		f2f5e450 c8c6cff2 f737dd58 7713d683
+		83346557 fe9d1947 17c75373 be006a46
+		b727e194 696f73a7 48c79b74 2a001d2e
+
+=== [c1_16] 6/9 one phase-2 contribution ===
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit Hash: 
+		d2724afb 14f5d622 25a69c7f faef80e4
+		f2f5e450 c8c6cff2 f737dd58 7713d683
+		83346557 fe9d1947 17c75373 be006a46
+		b727e194 696f73a7 48c79b74 2a001d2e
+[32;22m[INFO]  [39;1msnarkJS[0m: Contribution Hash: 
+		700049a1 e27b2806 e427975a f18c0fee
+		80b48b4e ae2479ed e24e5398 4323e238
+		f90e06b0 6e8d0394 e97a3fe2 553d277d
+		2e089720 981cfdb4 f6dd371e 707fda2b
+
+=== [c1_16] 7/9 export verification key ===
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: groth16
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+
+=== [c1_16] 8/9 sanity proof: Rapidsnark proves, SnarkJS verifies ===
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+
+=== [c1_16] 9/9 meta.json ===
+{
+  "nConstraints": 65155,
+  "nPubInputs": 0,
+  "nPrvInputs": 1,
+  "nOutputs": 1,
+  "nVars": 65157,
+  "domainPower": 16,
+  "domain": 65536,
+  "name": "c1_16",
+  "N": 157,
+  "zkeyBytes": 28030155
+}
+
+[c1_16] built OK
+[c1_18] N = 631 hashes -> domain 2^18
+
+=== [c1_18] 1/9 compile with circom ===
+[32mtemplate instances[0m: 71
+non-linear constraints: 136296
+linear constraints: 125569
+public inputs: 0
+private inputs: 1
+public outputs: 1
+wires: 261867
+labels: 366615
+[32mWritten successfully:[0m build/c1_18/c1_18.r1cs
+[32mWritten successfully:[0m build/c1_18/c1_18.sym
+[32mWritten successfully:[0m build/c1_18/c1_18_cpp/c1_18.cpp and build/c1_18/c1_18_cpp/c1_18.dat
+[32mWritten successfully:[0m build/c1_18/c1_18_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m build/c1_18/c1_18_js/c1_18.wasm
+[32mEverything went okay[0m
+
+=== [c1_18] 2/9 circuit size ===
+{
+  "nConstraints": 261865,
+  "nPubInputs": 0,
+  "nPrvInputs": 1,
+  "nOutputs": 1,
+  "nVars": 261867,
+  "domainPower": 18,
+  "domain": 262144
+}
+
+=== [c1_18] 3/9 build the C++ witness generator ===
+fr.asm:8424: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+fr.asm:8427: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+fr.asm:8430: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+fr.asm:8433: warning: $ prefix for hexadecimal is deprecated [-w+number-deprecated-hex]
+
+=== [c1_18] 4/9 witness (native C++ and WASM) + constraint check ===
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   WITNESS CHECK
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:          bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars (wires):   261867
+[32;22m[INFO]  [39;1msnarkJS[0m:   Outputs:        1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public Inputs:  0
+[32;22m[INFO]  [39;1msnarkJS[0m:   Private Inputs: 1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Labels:         366615
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:    261865
+[32;22m[INFO]  [39;1msnarkJS[0m:   Custom Gates:   false
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking witness correctness
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS IS CORRECT
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING FINISHED SUCCESSFULLY
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   WITNESS CHECK
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:          bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars (wires):   261867
+[32;22m[INFO]  [39;1msnarkJS[0m:   Outputs:        1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public Inputs:  0
+[32;22m[INFO]  [39;1msnarkJS[0m:   Private Inputs: 1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Labels:         366615
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:    261865
+[32;22m[INFO]  [39;1msnarkJS[0m:   Custom Gates:   false
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking witness correctness
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS IS CORRECT
+[32;22m[INFO]  [39;1msnarkJS[0m: WITNESS CHECKING FINISHED SUCCESSFULLY
+
+=== [c1_18] 5/9 Groth16 setup (phase 2) ===
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit hash: 
+		eee38e8d 2ad60a35 d00ad03a cae73671
+		b854b318 878aecf3 e979f25c 8647e3d0
+		51475a62 24803217 7e4f41c9 043f5204
+		f135fd6f f50c3d59 903a058f 13bc7666
+
+=== [c1_18] 6/9 one phase-2 contribution ===
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit Hash: 
+		eee38e8d 2ad60a35 d00ad03a cae73671
+		b854b318 878aecf3 e979f25c 8647e3d0
+		51475a62 24803217 7e4f41c9 043f5204
+		f135fd6f f50c3d59 903a058f 13bc7666
+[32;22m[INFO]  [39;1msnarkJS[0m: Contribution Hash: 
+		43a3eafb 12206cdf 05eb5a0e 1c2f797a
+		a8a3510f 331d17fb 84436c0f 7e8280ab
+		880a4264 256d8032 ac4565af 6f127254
+		5b8ead32 75362d30 54b03e72 7c590e14
+
+=== [c1_18] 7/9 export verification key ===
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: groth16
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+
+=== [c1_18] 8/9 sanity proof: Rapidsnark proves, SnarkJS verifies ===
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+
+=== [c1_18] 9/9 meta.json ===
+{
+  "nConstraints": 261865,
+  "nPubInputs": 0,
+  "nPrvInputs": 1,
+  "nOutputs": 1,
+  "nVars": 261867,
+  "domainPower": 18,
+  "domain": 262144,
+  "name": "c1_18",
+  "N": 631,
+  "zkeyBytes": 112570059
+}
+
+[c1_18] built OK
+
+Summary:
+{"name":"c1_12","N":9,"nConstraints":3735,"domain":4096,"zkeyMB":1}
+{"name":"c1_14","N":39,"nConstraints":16185,"domain":16384,"zkeyMB":6}
+{"name":"c1_16","N":157,"nConstraints":65155,"domain":65536,"zkeyMB":26}
+{"name":"c1_18","N":631,"nConstraints":261865,"domain":262144,"zkeyMB":107}

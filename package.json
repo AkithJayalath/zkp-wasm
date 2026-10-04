@@ -1,0 +1,17 @@
+{
+  "name": "zkp-wasm-overhead",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser (WASM) vs native overhead of Groth16 proof generation, per pipeline stage",
+  "scripts": {
+    "instrument": "node scripts/instrument_snarkjs.mjs",
+    "postinstall": "node scripts/instrument_snarkjs.mjs",
+    "serve": "node web/server.mjs"
+  },
+  "dependencies": {
+    "circomlib": "2.0.5",
+    "playwright": "1.63.0",
+    "snarkjs": "0.7.6"
+  }
+}

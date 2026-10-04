@@ -1,0 +1,10 @@
+node_modules/
+build/*
+!build/.gitkeep
+circuits/gen/*
+!circuits/gen/.gitkeep
+ptau/*.ptau
+tools/*
+!tools/.gitkeep
+.venv/
+__pycache__/

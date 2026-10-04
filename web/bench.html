@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZKP browser benchmark</title>
+  <style>
+    body { font: 14px/1.5 system-ui, sans-serif; margin: 24px; background: #fcfcfb; color: #0b0b0b; }
+    pre { background: #f1f0ec; padding: 12px; border-radius: 8px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>Groth16 browser benchmark</h1>
+  <p>Parameters come from the URL: <code>?circuit=c1_16&amp;threads=all&amp;runs=30&amp;warmup=5</code>.
+     The prover runs inside a Web Worker, so this page stays responsive.</p>
+  <pre id="log"></pre>
+  <script src="/web/bench_page.js"></script>
+</body>
+</html>

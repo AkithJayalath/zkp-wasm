@@ -1,4 +1,4 @@
-# Environment snapshot — 2026-10-04T10:58:50+05:30
+# Environment snapshot — 2026-10-05T00:22:20+05:30
 
 ## OS and kernel
 ```
@@ -60,14 +60,14 @@ Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspa
 ```
 CPU NODE SOCKET CORE L1d:L1i:L2:L3 ONLINE    MAXMHZ   MINMHZ       MHZ
   0    0      0    0 0:0:0:0          yes 2600.0000 400.0000 2600.0071
-  1    0      0    1 1:1:1:0          yes 2600.0000 400.0000 2600.0840
-  2    0      0    0 0:0:0:0          yes 2600.0000 400.0000 2600.1240
-  3    0      0    1 1:1:1:0          yes 2600.0000 400.0000 2600.0271
+  1    0      0    1 1:1:1:0          yes 2600.0000 400.0000 2600.0010
+  2    0      0    0 0:0:0:0          yes 2600.0000 400.0000 2601.1211
+  3    0      0    1 1:1:1:0          yes 2600.0000 400.0000 2599.8391
 ```
 ## Memory
 ```
                total        used        free      shared  buff/cache   available
-Mem:            18Gi       4.4Gi        11Gi       802Mi       4.4Gi        14Gi
+Mem:            18Gi       3.0Gi        11Gi       583Mi       4.9Gi        15Gi
 Swap:          8.0Gi          0B       8.0Gi
 ```
 ## Power state

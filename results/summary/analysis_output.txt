@@ -1,0 +1,65 @@
+
+Tables written to results/summary/:
+  bridging_bytes.csv
+  cold_start.csv
+  config_summary.csv
+  rerun_list.csv
+  rq1_overhead.csv
+  rq1_scaling_slopes.csv
+  rq2_stages.csv
+  stage_coverage.csv
+
+Figures:
+  figure  results/figures/F1_rq1_scaling.png
+  figure  results/figures/F2_rq1_overhead_ratio.png
+  figure  results/figures/F3_rq2_waterfall_k12_t1_chrome.png
+  figure  results/figures/F3_rq2_waterfall_k12_t1_node.png
+  figure  results/figures/F3_rq2_waterfall_k12_tall_chrome.png
+  figure  results/figures/F3_rq2_waterfall_k12_tall_node.png
+  figure  results/figures/F3_rq2_waterfall_k14_t1_chrome.png
+  figure  results/figures/F3_rq2_waterfall_k14_t1_node.png
+  figure  results/figures/F3_rq2_waterfall_k14_tall_chrome.png
+  figure  results/figures/F3_rq2_waterfall_k14_tall_node.png
+  figure  results/figures/F3_rq2_waterfall_k16_t1_chrome.png
+  figure  results/figures/F3_rq2_waterfall_k16_t1_node.png
+  figure  results/figures/F3_rq2_waterfall_k16_tall_chrome.png
+  figure  results/figures/F3_rq2_waterfall_k16_tall_node.png
+  figure  results/figures/F3_rq2_waterfall_k18_t1_chrome.png
+  figure  results/figures/F3_rq2_waterfall_k18_t1_node.png
+  figure  results/figures/F3_rq2_waterfall_k18_tall_chrome.png
+  figure  results/figures/F3_rq2_waterfall_k18_tall_node.png
+  figure  results/figures/F4_rq2_stage_shares_k12.png
+  figure  results/figures/F4_rq2_stage_shares_k14.png
+  figure  results/figures/F4_rq2_stage_shares_k16.png
+  figure  results/figures/F4_rq2_stage_shares_k18.png
+  figure  results/figures/F7_peak_memory.png
+
+RQ1 headline (end-to-end, warm, median ratio [95% CI]):
+  2^12  1 thread   Chrome/native =   6.39x  [6.34, 6.41]
+  2^12  all cores  Chrome/native =   6.11x  [6.01, 6.21]
+  2^14  1 thread   Chrome/native =   6.36x  [6.35, 6.37]
+  2^14  all cores  Chrome/native =   6.82x  [6.64, 6.87]
+  2^16  1 thread   Chrome/native =   6.26x  [6.25, 6.27]
+  2^16  all cores  Chrome/native =   6.71x  [6.69, 6.72]
+  2^18  1 thread   Chrome/native =   5.58x  [5.56, 5.59]
+  2^18  all cores  Chrome/native =   5.52x  [5.50, 5.54]
+
+RQ2 headline (stage with the largest share of the added time):
+  2^12  1 thread   chrome vs native  S5 MSM                        92.1% of added time
+  2^12  1 thread   node vs native    S5 MSM                        90.3% of added time
+  2^12  all cores  chrome vs native  S5 MSM                        86.6% of added time
+  2^12  all cores  node vs native    S5 MSM                        84.3% of added time
+  2^14  1 thread   chrome vs native  S5 MSM                        91.1% of added time
+  2^14  1 thread   node vs native    S5 MSM                        90.2% of added time
+  2^14  all cores  chrome vs native  S5 MSM                        82.9% of added time
+  2^14  all cores  node vs native    S5 MSM                        85.2% of added time
+  2^16  1 thread   chrome vs native  S5 MSM                        88.6% of added time
+  2^16  1 thread   node vs native    S5 MSM                        88.5% of added time
+  2^16  all cores  chrome vs native  S5 MSM                        84.7% of added time
+  2^16  all cores  node vs native    S5 MSM                        84.3% of added time
+  2^18  1 thread   chrome vs native  S5 MSM                        86.1% of added time
+  2^18  1 thread   node vs native    S5 MSM                        86.1% of added time
+  2^18  all cores  chrome vs native  S5 MSM                        81.1% of added time
+  2^18  all cores  node vs native    S5 MSM                        81.5% of added time
+
+1 configuration(s) have CV > 5%: see results/summary/rerun_list.csv

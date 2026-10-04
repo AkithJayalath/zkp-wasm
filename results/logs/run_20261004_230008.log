@@ -1,0 +1,19 @@
+=== [1/1] 23:00:08  node  c1_18  threads=1  runs=10 ===
+[node c1_18 t=1] cold 0/15  witness 318.6 ms  prove 45536.7 ms
+[node c1_18 t=1] warmup 1/15  witness 316.6 ms  prove 43914.7 ms
+[node c1_18 t=1] warmup 2/15  witness 317.3 ms  prove 43765.1 ms
+[node c1_18 t=1] warmup 3/15  witness 315.8 ms  prove 44523.7 ms
+[node c1_18 t=1] warmup 4/15  witness 334.2 ms  prove 43834.7 ms
+[node c1_18 t=1] warmup 5/15  witness 329.7 ms  prove 43837.6 ms
+[node c1_18 t=1] warm 6/15  witness 324.7 ms  prove 43760.5 ms
+[node c1_18 t=1] warm 7/15  witness 332.4 ms  prove 43773.5 ms
+[node c1_18 t=1] warm 8/15  witness 327.0 ms  prove 43836.8 ms
+[node c1_18 t=1] warm 9/15  witness 324.4 ms  prove 43797.3 ms
+[node c1_18 t=1] warm 10/15  witness 325.6 ms  prove 43695.2 ms
+[node c1_18 t=1] warm 11/15  witness 313.5 ms  prove 43844.6 ms
+[node c1_18 t=1] warm 12/15  witness 315.6 ms  prove 44075.8 ms
+[node c1_18 t=1] warm 13/15  witness 322.0 ms  prove 43225.1 ms
+[node c1_18 t=1] warm 14/15  witness 333.9 ms  prove 43156.1 ms
+[node c1_18 t=1] warm 15/15  witness 326.7 ms  prove 43122.4 ms
+node c1_18 threads=1: 10 warm runs | median total 44095.6 ms | median prove 43767.0 ms | all proofs verified: true
+All done 23:12:26

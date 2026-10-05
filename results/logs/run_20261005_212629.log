@@ -1,0 +1,121 @@
+=== [1/6] 21:26:29  native  c1_20  threads=all  runs=10 ===
+[native c1_20 t=all] cold 0/15  witness 505.8 ms  prove 19564.7 ms
+[native c1_20 t=all] warmup 1/15  witness 503.5 ms  prove 20540.4 ms
+[native c1_20 t=all] warmup 2/15  witness 512.3 ms  prove 16242.9 ms
+[native c1_20 t=all] warmup 3/15  witness 511.6 ms  prove 15069.7 ms
+[native c1_20 t=all] warmup 4/15  witness 504.9 ms  prove 15092.7 ms
+[native c1_20 t=all] warmup 5/15  witness 511.0 ms  prove 15587.3 ms
+[native c1_20 t=all] warm 6/15  witness 505.4 ms  prove 14886.0 ms
+[native c1_20 t=all] warm 7/15  witness 507.6 ms  prove 15010.7 ms
+[native c1_20 t=all] warm 8/15  witness 505.8 ms  prove 15006.1 ms
+[native c1_20 t=all] warm 9/15  witness 505.7 ms  prove 15011.6 ms
+[native c1_20 t=all] warm 10/15  witness 505.5 ms  prove 14985.4 ms
+[native c1_20 t=all] warm 11/15  witness 507.5 ms  prove 14978.7 ms
+[native c1_20 t=all] warm 12/15  witness 504.7 ms  prove 15002.4 ms
+[native c1_20 t=all] warm 13/15  witness 504.0 ms  prove 14981.7 ms
+[native c1_20 t=all] warm 14/15  witness 506.9 ms  prove 14893.4 ms
+[native c1_20 t=all] warm 15/15  witness 509.0 ms  prove 14974.0 ms
+native c1_20 threads=all: 10 warm runs | median total 15488.5 ms | median prove 14983.5 ms | all proofs verified: true
+=== [2/6] 21:31:20  node  c1_20  threads=1  runs=10 ===
+[node c1_20 t=1] cold 0/15  witness 1180.5 ms  prove 163319.9 ms
+[node c1_20 t=1] warmup 1/15  witness 1163.3 ms  prove 161267.0 ms
+[node c1_20 t=1] warmup 2/15  witness 1186.5 ms  prove 162018.2 ms
+[node c1_20 t=1] warmup 3/15  witness 1133.4 ms  prove 162211.9 ms
+[node c1_20 t=1] warmup 4/15  witness 1203.4 ms  prove 161951.6 ms
+[node c1_20 t=1] warmup 5/15  witness 1226.2 ms  prove 161686.9 ms
+[node c1_20 t=1] warm 6/15  witness 1175.0 ms  prove 161602.2 ms
+[node c1_20 t=1] warm 7/15  witness 1179.5 ms  prove 164788.9 ms
+[node c1_20 t=1] warm 8/15  witness 1186.4 ms  prove 161980.1 ms
+[node c1_20 t=1] warm 9/15  witness 1185.4 ms  prove 161953.4 ms
+[node c1_20 t=1] warm 10/15  witness 1178.8 ms  prove 161897.3 ms
+[node c1_20 t=1] warm 11/15  witness 1152.8 ms  prove 161400.1 ms
+[node c1_20 t=1] warm 12/15  witness 1164.8 ms  prove 161171.6 ms
+[node c1_20 t=1] warm 13/15  witness 1185.5 ms  prove 161779.1 ms
+[node c1_20 t=1] warm 14/15  witness 1163.3 ms  prove 161538.5 ms
+[node c1_20 t=1] warm 15/15  witness 1184.2 ms  prove 161623.4 ms
+node c1_20 threads=1: 10 warm runs | median total 162886.1 ms | median prove 161701.3 ms | all proofs verified: true
+=== [3/6] 22:15:23  chrome  c1_20  threads=all  runs=10 ===
+[chrome] config {"circuit":"c1_20","threads":"all","runs":10,"warmup":5}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 240.1 ms
+[chrome] fetched zkey (429.7 MB) + wasm in 1739.6 ms
+[chrome] cold 0/15  witness 1220.2 ms  prove 93801.9 ms
+[chrome] warmup 1/15  witness 1218.8 ms  prove 93778.0 ms
+[chrome] warmup 2/15  witness 1230.6 ms  prove 93607.5 ms
+[chrome] warmup 3/15  witness 1242.1 ms  prove 93883.6 ms
+[chrome] warmup 4/15  witness 1220.7 ms  prove 93434.7 ms
+[chrome] warmup 5/15  witness 1201.6 ms  prove 93631.2 ms
+[chrome] warm 6/15  witness 1235.9 ms  prove 93527.5 ms
+[chrome] warm 7/15  witness 1208.4 ms  prove 93847.4 ms
+[chrome] warm 8/15  witness 1208.8 ms  prove 93403.9 ms
+[chrome] warm 9/15  witness 1210.3 ms  prove 93683.5 ms
+[chrome] warm 10/15  witness 1190.4 ms  prove 93242.2 ms
+[chrome] warm 11/15  witness 1246.2 ms  prove 93740.4 ms
+[chrome] warm 12/15  witness 1220.0 ms  prove 93407.4 ms
+[chrome] warm 13/15  witness 1273.7 ms  prove 93471.5 ms
+[chrome] warm 14/15  witness 1261.6 ms  prove 93509.0 ms
+[chrome] warm 15/15  witness 1192.7 ms  prove 93536.5 ms
+[chrome] DONE
+chrome c1_20 threads=all: 10 warm runs | median total 94754.3 ms | median prove 93518.3 ms | all proofs verified: true
+=== [4/6] 22:41:14  chrome  c1_20  threads=1  runs=10 ===
+[chrome] config {"circuit":"c1_20","threads":"1","runs":10,"warmup":5}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 219.9 ms
+[chrome] fetched zkey (429.7 MB) + wasm in 1726.9 ms
+[chrome] cold 0/15  witness 1183.9 ms  prove 206688.5 ms
+[chrome] warmup 1/15  witness 1205.2 ms  prove 206207.3 ms
+[chrome] warmup 2/15  witness 1343.8 ms  prove 206154.6 ms
+[chrome] warmup 3/15  witness 1380.9 ms  prove 206231.0 ms
+[chrome] warmup 4/15  witness 1464.1 ms  prove 206056.1 ms
+[chrome] warmup 5/15  witness 1437.1 ms  prove 206263.7 ms
+[chrome] warm 6/15  witness 1509.6 ms  prove 206176.4 ms
+[chrome] warm 7/15  witness 1313.1 ms  prove 206177.9 ms
+[chrome] warm 8/15  witness 1447.6 ms  prove 206093.5 ms
+[chrome] warm 9/15  witness 1434.7 ms  prove 206164.6 ms
+[chrome] warm 10/15  witness 1453.2 ms  prove 206058.4 ms
+[chrome] warm 11/15  witness 1435.6 ms  prove 206239.6 ms
+[chrome] warm 12/15  witness 1430.9 ms  prove 206175.5 ms
+[chrome] warm 13/15  witness 1289.1 ms  prove 206195.3 ms
+[chrome] warm 14/15  witness 1458.0 ms  prove 206162.0 ms
+[chrome] warm 15/15  witness 1432.2 ms  prove 206385.5 ms
+[chrome] DONE
+chrome c1_20 threads=1: 10 warm runs | median total 207602.8 ms | median prove 206175.9 ms | all proofs verified: true
+=== [5/6] 23:37:10  node  c1_20  threads=all  runs=10 ===
+[node c1_20 t=all] cold 0/15  witness 1175.3 ms  prove 86375.6 ms
+[node c1_20 t=all] warmup 1/15  witness 1153.7 ms  prove 84744.9 ms
+[node c1_20 t=all] warmup 2/15  witness 1177.7 ms  prove 84708.7 ms
+[node c1_20 t=all] warmup 3/15  witness 1170.4 ms  prove 84718.5 ms
+[node c1_20 t=all] warmup 4/15  witness 1149.7 ms  prove 84728.1 ms
+[node c1_20 t=all] warmup 5/15  witness 1162.7 ms  prove 84261.0 ms
+[node c1_20 t=all] warm 6/15  witness 1241.7 ms  prove 84698.7 ms
+[node c1_20 t=all] warm 7/15  witness 1194.0 ms  prove 85026.9 ms
+[node c1_20 t=all] warm 8/15  witness 1171.5 ms  prove 85033.3 ms
+[node c1_20 t=all] warm 9/15  witness 1216.7 ms  prove 84788.2 ms
+[node c1_20 t=all] warm 10/15  witness 1189.1 ms  prove 84989.7 ms
+[node c1_20 t=all] warm 11/15  witness 1185.5 ms  prove 84687.7 ms
+[node c1_20 t=all] warm 12/15  witness 1294.3 ms  prove 84960.8 ms
+[node c1_20 t=all] warm 13/15  witness 1162.8 ms  prove 84657.2 ms
+[node c1_20 t=all] warm 14/15  witness 1161.6 ms  prove 84126.0 ms
+[node c1_20 t=all] warm 15/15  witness 1232.5 ms  prove 85071.7 ms
+node c1_20 threads=all: 10 warm runs | median total 86091.9 ms | median prove 84874.5 ms | all proofs verified: true
+=== [6/6] 00:00:38  native  c1_20  threads=1  runs=10 ===
+[native c1_20 t=1] cold 0/15  witness 503.3 ms  prove 37016.8 ms
+[native c1_20 t=1] warmup 1/15  witness 506.4 ms  prove 36944.2 ms
+[native c1_20 t=1] warmup 2/15  witness 508.2 ms  prove 36960.8 ms
+[native c1_20 t=1] warmup 3/15  witness 508.8 ms  prove 36944.0 ms
+[native c1_20 t=1] warmup 4/15  witness 507.8 ms  prove 36825.7 ms
+[native c1_20 t=1] warmup 5/15  witness 507.0 ms  prove 36944.8 ms
+[native c1_20 t=1] warm 6/15  witness 505.0 ms  prove 36807.0 ms
+[native c1_20 t=1] warm 7/15  witness 505.9 ms  prove 37071.0 ms
+[native c1_20 t=1] warm 8/15  witness 508.7 ms  prove 36997.3 ms
+[native c1_20 t=1] warm 9/15  witness 509.6 ms  prove 36913.1 ms
+[native c1_20 t=1] warm 10/15  witness 503.8 ms  prove 36945.5 ms
+[native c1_20 t=1] warm 11/15  witness 509.4 ms  prove 36904.7 ms
+[native c1_20 t=1] warm 12/15  witness 509.3 ms  prove 36800.2 ms
+[native c1_20 t=1] warm 13/15  witness 509.2 ms  prove 37248.5 ms
+[native c1_20 t=1] warm 14/15  witness 507.9 ms  prove 37110.3 ms
+[native c1_20 t=1] warm 15/15  witness 507.4 ms  prove 36952.7 ms
+native c1_20 threads=1: 10 warm runs | median total 37454.7 ms | median prove 36949.1 ms | all proofs verified: true
+All done 00:11:09

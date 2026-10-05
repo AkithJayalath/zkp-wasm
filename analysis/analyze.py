@@ -13,6 +13,7 @@ verified proof enter the statistics.
 """
 from pathlib import Path
 import json
+import os
 import sys
 
 import numpy as np
@@ -30,6 +31,10 @@ SUMMARY.mkdir(parents=True, exist_ok=True)
 FIGS.mkdir(parents=True, exist_ok=True)
 
 RUNTIMES = ["native", "node", "chrome"]
+# Runtimes drawn in figures (tables always use all). FIG_RUNTIMES=native,chrome draws native vs Chrome only;
+# those figures get a suffix (e.g. F1_rq1_scaling_native-chrome.png) so the full versions are kept.
+FIG_RUNTIMES = [r for r in os.environ.get("FIG_RUNTIMES", ",".join(RUNTIMES)).split(",") if r in RUNTIMES]
+FIG_SUFFIX = "" if FIG_RUNTIMES == RUNTIMES else "_" + "-".join(FIG_RUNTIMES)
 RT_LABEL = {"native": "Native (Rapidsnark)", "node": "Node.js (SnarkJS WASM)", "chrome": "Chrome (SnarkJS WASM)"}
 RT_COLOR = {"native": "#2a78d6", "node": "#eb6834", "chrome": "#1baf7a"}
 STAGES = ["load_io", "witness", "qap", "fft", "msm", "finalize"]
@@ -187,6 +192,7 @@ def ms_fmt(v, _):
 
 
 def save(fig, name):
+    name += FIG_SUFFIX
     fig.savefig(FIGS / f"{name}.png")
     fig.savefig(FIGS / f"{name}.pdf")
     plt.close(fig)
@@ -197,7 +203,7 @@ def fig_scaling(summ):
     ths = [t for t in ["1", "all"] if t in set(summ.threads)]
     fig, axes = plt.subplots(1, len(ths), figsize=(5.2 * len(ths), 4), sharey=True, squeeze=False)
     for ax, th in zip(axes[0], ths):
-        for rt in RUNTIMES:
+        for rt in FIG_RUNTIMES:
             g = summ[(summ.runtime == rt) & (summ.threads == th)].sort_values("domain")
             if g.empty:
                 continue
@@ -205,7 +211,8 @@ def fig_scaling(summ):
             ax.errorbar(g.domain, g.median_total_ms, yerr=yerr, color=RT_COLOR[rt], marker="o",
                         markersize=6, linewidth=2, capsize=3, label=RT_LABEL[rt])
             last = g.iloc[-1]
-            ax.annotate(RT_LABEL[rt].split(" (")[0], (last.domain, last.median_total_ms), xytext=(6, 0),
+            dy = {"chrome": 6, "node": -6}.get(rt, 0)  # keep Chrome/Node end labels apart
+            ax.annotate(RT_LABEL[rt].split(" (")[0], (last.domain, last.median_total_ms), xytext=(6, dy),
                         textcoords="offset points", va="center", color=INK, fontsize=9)
         ax.set_xscale("log", base=2)
         ax.set_yscale("log")
@@ -227,7 +234,7 @@ def fig_ratio(ov):
     colors = {"chrome/native": RT_COLOR["chrome"], "node/native": RT_COLOR["node"]}
     labels = {"chrome/native": "Chrome ÷ native", "node/native": "Node.js ÷ native"}
     for ax, th in zip(axes[0], ths):
-        for comp in ["chrome/native", "node/native"]:
+        for comp in [c for c in ["chrome/native", "node/native"] if c.split("/")[0] in FIG_RUNTIMES]:
             g = ov[(ov.threads == th) & (ov.comparison == comp)].sort_values("k")
             if g.empty:
                 continue
@@ -237,12 +244,13 @@ def fig_ratio(ov):
                 ax.annotate(f"{r.ratio:.1f}×", (r.k, r.ratio), xytext=(0, 8), textcoords="offset points",
                             ha="center", fontsize=8, color=INK2)
         ax.axhline(1, color=INK2, linewidth=1, linestyle="--")
+        ax.set_ylim(0, max(8, ov.ci95_hi.max() * 1.1))
         ax.set_xticks(sorted(ov.k.unique()))
         ax.set_xticklabels([f"2^{int(k)}" for k in sorted(ov.k.unique())])
         ax.set_xlabel("FFT domain size")
         ax.set_title(THREAD_LABEL[th], color=INK, loc="left")
     axes[0][0].set_ylabel("Overhead ratio (median ÷ native median)")
-    axes[0][-1].legend(loc="upper left")
+    axes[0][-1].legend(loc="lower left")
     fig.suptitle("RQ1 · Overhead factor vs native, with 95% bootstrap CI", x=0.01, ha="left",
                  fontweight="bold", color=INK)
     save(fig, "F2_rq1_overhead_ratio")
@@ -282,7 +290,7 @@ def fig_waterfall(med, k, th, target="chrome"):
 
 
 def fig_shares(med, k):
-    rows = [(rt, th) for th in ["1", "all"] for rt in RUNTIMES if (k, th, rt) in med.index]
+    rows = [(rt, th) for th in ["1", "all"] for rt in FIG_RUNTIMES if (k, th, rt) in med.index]
     if not rows:
         return
     fig, ax = plt.subplots(figsize=(9, 0.55 * len(rows) + 1.6))
@@ -310,6 +318,7 @@ def fig_shares(med, k):
 
 def fig_memory(summ):
     g = summ.dropna(subset=["peak_rss_mb"])
+    g = g[g.runtime.isin(FIG_RUNTIMES)]
     if g.empty:
         return
     fig, ax = plt.subplots(figsize=(6, 4))
@@ -369,8 +378,8 @@ def main():
     fig_scaling(summ)
     fig_ratio(ov[ov.metric == "total_ms"])
     for (k, th) in sorted({(k, th) for k, th, _ in med.index}):
-        fig_waterfall(med, k, th, "chrome")
-        fig_waterfall(med, k, th, "node")
+        for target in [t for t in ["chrome", "node"] if t in FIG_RUNTIMES]:
+            fig_waterfall(med, k, th, target)
     for k in sorted({k for k, _, _ in med.index}):
         fig_shares(med, k)
     fig_memory(summ)

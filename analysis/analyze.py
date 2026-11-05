@@ -27,6 +27,11 @@ from scipy.stats import mannwhitneyu  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW, SUMMARY, FIGS = ROOT / "results/raw", ROOT / "results/summary", ROOT / "results/figures"
+# Other circuit families (e.g. c2_ for the generality check) write to their own subfolders,
+# so the C1 tables and figures are never overwritten.
+_PREFIX = sys.argv[1] if len(sys.argv) > 1 else "c1_"
+if _PREFIX != "c1_":
+    SUMMARY, FIGS = SUMMARY / _PREFIX.rstrip("_"), FIGS / _PREFIX.rstrip("_")
 SUMMARY.mkdir(parents=True, exist_ok=True)
 FIGS.mkdir(parents=True, exist_ok=True)
 

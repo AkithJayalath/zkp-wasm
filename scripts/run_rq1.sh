@@ -7,6 +7,7 @@
 #
 # Results are appended to results/raw/<runtime>.jsonl ; a log goes to results/logs/.
 set -uo pipefail
+PREFIX="${PREFIX:-c1}"   # circuit family (c1 = Poseidon chain, c2 = SHA-256 for the generality check)
 cd "$(dirname "$0")/.."
 source ./config.sh
 
@@ -28,8 +29,8 @@ for c in "${configs[@]}"; do
   read -r rt k t <<< "$c"
   n=$((n + 1))
   runs=$(runs_for "$k")
-  echo "=== [$n/${#configs[@]}] $(date +%T)  $rt  c1_$k  threads=$t  runs=$runs ===" | tee -a "$LOG"
-  node "runner/${rt}_bench.mjs" --circuit "c1_$k" --threads "$t" --runs "$runs" --warmup "$WARMUP" 2>&1 | tee -a "$LOG"
+  echo "=== [$n/${#configs[@]}] $(date +%T)  $rt  ${PREFIX}_$k  threads=$t  runs=$runs ===" | tee -a "$LOG"
+  node "runner/${rt}_bench.mjs" --circuit "${PREFIX}_$k" --threads "$t" --runs "$runs" --warmup "$WARMUP" 2>&1 | tee -a "$LOG"
   [ "${PIPESTATUS[0]}" -ne 0 ] && echo "!!! FAILED: $c" | tee -a "$LOG" results/logs/failures.txt
   sleep "$COOLDOWN"
 done

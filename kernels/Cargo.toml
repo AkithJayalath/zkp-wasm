@@ -1,0 +1,34 @@
+[package]
+name = "zkp-kernels"
+version = "0.1.0"
+edition = "2021"
+description = "MSM, NTT and QAP kernels for SnarkJS's Groth16 prover (RQ3/RQ4). Same source builds to WASM and native."
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = []
+# Shared-memory thread pool: rayon + arkworks parallel code paths.
+# In the browser this needs wasm-bindgen-rayon and a std rebuilt with atomics (see scripts/build_kernels.sh).
+threads = ["dep:rayon", "dep:wasm-bindgen-rayon", "ark-ec/parallel", "ark-ff/parallel", "ark-poly/parallel", "ark-std/parallel"]
+
+[dependencies]
+ark-bn254 = { version = "0.5", default-features = false, features = ["curve"] }
+ark-ec    = { version = "0.5", default-features = false, features = ["std"] }
+ark-ff    = { version = "0.5", default-features = false, features = ["std"] }
+ark-poly  = { version = "0.5", default-features = false, features = ["std"] }
+ark-std   = { version = "0.5", default-features = false, features = ["std"] }
+rayon     = { version = "1.10", optional = true }
+num-bigint = { version = "0.4", default-features = false }   # GLV rounding constants (computed once per MSM)
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen = "0.2"
+wasm-bindgen-rayon = { version = "1.3", optional = true }
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"

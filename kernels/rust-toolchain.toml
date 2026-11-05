@@ -1,0 +1,7 @@
+# Pin the compiler so every kernel build (WASM and native) uses the same rustc.
+# rustup reads this file automatically and installs what is missing.
+[toolchain]
+channel = "1.97.0"
+components = ["rust-src"]                # needed to rebuild std with atomics (threaded builds)
+targets = ["wasm32-unknown-unknown"]
+profile = "minimal"

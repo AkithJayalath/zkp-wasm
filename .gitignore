@@ -8,3 +8,8 @@ tools/*
 !tools/.gitkeep
 .venv/
 __pycache__/
+
+# RQ3/RQ4 kernel builds (rebuilt with scripts/build_kernels.sh)
+kernels/target*/
+web/kernels/*/
+!web/kernels/adapter.js

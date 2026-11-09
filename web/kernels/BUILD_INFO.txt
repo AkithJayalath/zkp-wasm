@@ -1,0 +1,4 @@
+built: 2026-11-05T20:19:09+05:30
+rustc 1.97.0 (2d8144b78 2026-07-07)
+wasm-bindgen 0.2.130
+builds: plain wide simd threads threads-wide native

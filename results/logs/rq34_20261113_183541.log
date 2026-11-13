@@ -1,0 +1,47 @@
+Running 1 configurations; Chrome: Google Chrome 154.0.8037.97 ; log: results/logs/rq34_20261113_183541.log
+=== [1/1] 18:35:41  B1  c1_16  threads=all  runs=30 ===
+[chrome] config {"mode":"bench","circuit":"c1_16","threads":"all","runs":30,"warmup":5,"kernel":"","opt":"","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 232.7 ms
+[chrome] fetched zkey (26.7 MB) + wasm in 173.2 ms
+[chrome] cold 0/35  witness 233.2 ms  prove 7774.7 ms
+[chrome] warmup 1/35  witness 95.8 ms  prove 7053.9 ms
+[chrome] warmup 2/35  witness 92.0 ms  prove 7045.7 ms
+[chrome] warmup 3/35  witness 98.0 ms  prove 7090.4 ms
+[chrome] warmup 4/35  witness 104.0 ms  prove 7048.3 ms
+[chrome] warmup 5/35  witness 101.1 ms  prove 7008.5 ms
+[chrome] warm 6/35  witness 194.3 ms  prove 7112.7 ms
+[chrome] warm 7/35  witness 192.8 ms  prove 7050.2 ms
+[chrome] warm 8/35  witness 86.6 ms  prove 7034.9 ms
+[chrome] warm 9/35  witness 100.7 ms  prove 7054.9 ms
+[chrome] warm 10/35  witness 129.8 ms  prove 7074.5 ms
+[chrome] warm 11/35  witness 96.1 ms  prove 7037.1 ms
+[chrome] warm 12/35  witness 117.0 ms  prove 7008.4 ms
+[chrome] warm 13/35  witness 102.1 ms  prove 7045.2 ms
+[chrome] warm 14/35  witness 104.2 ms  prove 7051.3 ms
+[chrome] warm 15/35  witness 189.3 ms  prove 7033.8 ms
+[chrome] warm 16/35  witness 105.0 ms  prove 7064.5 ms
+[chrome] warm 17/35  witness 96.7 ms  prove 7031.4 ms
+[chrome] warm 18/35  witness 105.5 ms  prove 7036.0 ms
+[chrome] warm 19/35  witness 94.8 ms  prove 7036.3 ms
+[chrome] warm 20/35  witness 106.1 ms  prove 7069.7 ms
+[chrome] warm 21/35  witness 96.1 ms  prove 7057.5 ms
+[chrome] warm 22/35  witness 125.0 ms  prove 7063.8 ms
+[chrome] warm 23/35  witness 96.2 ms  prove 7025.5 ms
+[chrome] warm 24/35  witness 104.8 ms  prove 7070.4 ms
+[chrome] warm 25/35  witness 98.4 ms  prove 7064.9 ms
+[chrome] warm 26/35  witness 95.3 ms  prove 7095.5 ms
+[chrome] warm 27/35  witness 159.0 ms  prove 7082.5 ms
+[chrome] warm 28/35  witness 111.2 ms  prove 7112.4 ms
+[chrome] warm 29/35  witness 107.7 ms  prove 7118.1 ms
+[chrome] warm 30/35  witness 109.4 ms  prove 7082.1 ms
+[chrome] warm 31/35  witness 112.3 ms  prove 7098.0 ms
+[chrome] warm 32/35  witness 117.0 ms  prove 7123.2 ms
+[chrome] warm 33/35  witness 116.0 ms  prove 7087.8 ms
+[chrome] warm 34/35  witness 116.8 ms  prove 7102.8 ms
+[chrome] warm 35/35  witness 108.6 ms  prove 7092.3 ms
+[chrome] page memory: 88 MiB
+[chrome] DONE
+chrome B1 c1_16 threads=all: 30 warm runs | median total 7182.3 ms | median prove 7064.7 ms | all proofs verified: true
+All done 18:40:46

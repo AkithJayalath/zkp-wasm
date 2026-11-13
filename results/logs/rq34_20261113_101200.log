@@ -1,0 +1,762 @@
+Running 20 configurations; Chrome: Google Chrome 154.0.8037.97 ; log: results/logs/rq34_20261113_101200.log
+=== [1/20] 10:12:02  T4.2  c1_16  threads=all  runs=30 ===
+[chrome] config {"mode":"bench","circuit":"c1_16","threads":"all","runs":30,"warmup":5,"kernel":"threads","opt":"ntt","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 220.1 ms
+[chrome] fetched zkey (26.7 MB) + wasm in 184.0 ms
+[chrome] kernel threads (threads, 4 thread(s)) loaded in 72.6 ms; stages: ntt
+[chrome] cold 0/35  witness 224.7 ms  prove 7011.1 ms
+[chrome] warmup 1/35  witness 85.0 ms  prove 6740.1 ms
+[chrome] warmup 2/35  witness 101.9 ms  prove 6666.9 ms
+[chrome] warmup 3/35  witness 167.9 ms  prove 6718.7 ms
+[chrome] warmup 4/35  witness 101.7 ms  prove 6750.8 ms
+[chrome] warmup 5/35  witness 101.8 ms  prove 6692.4 ms
+[chrome] warm 6/35  witness 100.2 ms  prove 6680.9 ms
+[chrome] warm 7/35  witness 101.3 ms  prove 6698.3 ms
+[chrome] warm 8/35  witness 104.9 ms  prove 6670.4 ms
+[chrome] warm 9/35  witness 195.7 ms  prove 6773.3 ms
+[chrome] warm 10/35  witness 103.4 ms  prove 6695.4 ms
+[chrome] warm 11/35  witness 103.5 ms  prove 6718.1 ms
+[chrome] warm 12/35  witness 104.5 ms  prove 6694.1 ms
+[chrome] warm 13/35  witness 204.4 ms  prove 6701.5 ms
+[chrome] warm 14/35  witness 103.0 ms  prove 6704.7 ms
+[chrome] warm 15/35  witness 106.0 ms  prove 6709.0 ms
+[chrome] warm 16/35  witness 169.2 ms  prove 6767.3 ms
+[chrome] warm 17/35  witness 105.7 ms  prove 6688.4 ms
+[chrome] warm 18/35  witness 106.2 ms  prove 6713.9 ms
+[chrome] warm 19/35  witness 103.3 ms  prove 6749.3 ms
+[chrome] warm 20/35  witness 106.6 ms  prove 6687.4 ms
+[chrome] warm 21/35  witness 102.0 ms  prove 6724.7 ms
+[chrome] warm 22/35  witness 103.7 ms  prove 7061.5 ms
+[chrome] warm 23/35  witness 104.4 ms  prove 6792.6 ms
+[chrome] warm 24/35  witness 133.4 ms  prove 6694.1 ms
+[chrome] warm 25/35  witness 105.0 ms  prove 6709.3 ms
+[chrome] warm 26/35  witness 100.3 ms  prove 6703.6 ms
+[chrome] warm 27/35  witness 100.5 ms  prove 6693.4 ms
+[chrome] warm 28/35  witness 101.8 ms  prove 6704.2 ms
+[chrome] warm 29/35  witness 99.1 ms  prove 6718.0 ms
+[chrome] warm 30/35  witness 101.0 ms  prove 6644.9 ms
+[chrome] warm 31/35  witness 101.9 ms  prove 6749.8 ms
+[chrome] warm 32/35  witness 102.9 ms  prove 6671.2 ms
+[chrome] warm 33/35  witness 101.4 ms  prove 6705.5 ms
+[chrome] warm 34/35  witness 178.4 ms  prove 6716.9 ms
+[chrome] warm 35/35  witness 108.0 ms  prove 6672.3 ms
+[chrome] page memory: 105 MiB
+[chrome] DONE
+chrome T4.2 c1_16 threads=all: 30 warm runs | median total 6811.0 ms | median prove 6704.4 ms | all proofs verified: true
+=== [2/20] 10:17:42  T4.2  c1_14  threads=all  runs=30 ===
+[chrome] config {"mode":"bench","circuit":"c1_14","threads":"all","runs":30,"warmup":5,"kernel":"threads","opt":"ntt","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 221.1 ms
+[chrome] fetched zkey (6.6 MB) + wasm in 80.3 ms
+[chrome] kernel threads (threads, 4 thread(s)) loaded in 68.0 ms; stages: ntt
+[chrome] cold 0/35  witness 108.9 ms  prove 2241.4 ms
+[chrome] warmup 1/35  witness 32.3 ms  prove 1957.8 ms
+[chrome] warmup 2/35  witness 66.6 ms  prove 2000.7 ms
+[chrome] warmup 3/35  witness 67.3 ms  prove 2003.6 ms
+[chrome] warmup 4/35  witness 32.2 ms  prove 1927.1 ms
+[chrome] warmup 5/35  witness 31.9 ms  prove 1932.9 ms
+[chrome] warm 6/35  witness 56.6 ms  prove 1963.8 ms
+[chrome] warm 7/35  witness 33.1 ms  prove 1961.1 ms
+[chrome] warm 8/35  witness 69.3 ms  prove 2001.1 ms
+[chrome] warm 9/35  witness 34.9 ms  prove 1942.4 ms
+[chrome] warm 10/35  witness 32.0 ms  prove 1919.8 ms
+[chrome] warm 11/35  witness 67.9 ms  prove 2057.5 ms
+[chrome] warm 12/35  witness 75.9 ms  prove 1993.7 ms
+[chrome] warm 13/35  witness 78.4 ms  prove 2041.1 ms
+[chrome] warm 14/35  witness 31.9 ms  prove 1957.6 ms
+[chrome] warm 15/35  witness 67.8 ms  prove 2007.6 ms
+[chrome] warm 16/35  witness 76.2 ms  prove 2011.9 ms
+[chrome] warm 17/35  witness 34.7 ms  prove 1952.2 ms
+[chrome] warm 18/35  witness 34.3 ms  prove 1955.8 ms
+[chrome] warm 19/35  witness 58.0 ms  prove 1945.2 ms
+[chrome] warm 20/35  witness 34.0 ms  prove 1945.5 ms
+[chrome] warm 21/35  witness 32.4 ms  prove 1952.6 ms
+[chrome] warm 22/35  witness 34.0 ms  prove 1942.7 ms
+[chrome] warm 23/35  witness 30.9 ms  prove 1920.0 ms
+[chrome] warm 24/35  witness 69.0 ms  prove 1994.7 ms
+[chrome] warm 25/35  witness 68.0 ms  prove 2006.9 ms
+[chrome] warm 26/35  witness 78.7 ms  prove 2000.6 ms
+[chrome] warm 27/35  witness 33.1 ms  prove 1945.9 ms
+[chrome] warm 28/35  witness 31.4 ms  prove 1927.9 ms
+[chrome] warm 29/35  witness 59.3 ms  prove 1955.8 ms
+[chrome] warm 30/35  witness 31.9 ms  prove 1963.0 ms
+[chrome] warm 31/35  witness 82.9 ms  prove 1999.5 ms
+[chrome] warm 32/35  witness 32.2 ms  prove 1926.5 ms
+[chrome] warm 33/35  witness 77.4 ms  prove 2030.0 ms
+[chrome] warm 34/35  witness 32.6 ms  prove 1946.9 ms
+[chrome] warm 35/35  witness 65.3 ms  prove 2026.4 ms
+[chrome] page memory: 52 MiB
+[chrome] DONE
+chrome T4.2 c1_14 threads=all: 30 warm runs | median total 1999.1 ms | median prove 1959.4 ms | all proofs verified: true
+=== [3/20] 10:20:28  T3.2  c1_20  threads=all  runs=10 ===
+[chrome] config {"mode":"bench","circuit":"c1_20","threads":"all","runs":10,"warmup":5,"kernel":"threads","opt":"qap","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 219.5 ms
+[chrome] fetched zkey (429.7 MB) + wasm in 1854.8 ms
+[chrome] kernel threads (threads, 4 thread(s)) loaded in 109.6 ms; stages: qap
+[chrome] cold 0/15  witness 1111.4 ms  prove 89970.0 ms
+[chrome] warmup 1/15  witness 1207.2 ms  prove 89131.3 ms
+[chrome] warmup 2/15  witness 1182.2 ms  prove 89609.1 ms
+[chrome] warmup 3/15  witness 1219.4 ms  prove 89403.7 ms
+[chrome] warmup 4/15  witness 1183.8 ms  prove 89196.7 ms
+[chrome] warmup 5/15  witness 1198.3 ms  prove 89300.0 ms
+[chrome] warm 6/15  witness 1204.6 ms  prove 89280.6 ms
+[chrome] warm 7/15  witness 1230.4 ms  prove 89232.3 ms
+[chrome] warm 8/15  witness 1228.7 ms  prove 89200.4 ms
+[chrome] warm 9/15  witness 1225.7 ms  prove 89511.5 ms
+[chrome] warm 10/15  witness 1199.3 ms  prove 89274.4 ms
+[chrome] warm 11/15  witness 1210.4 ms  prove 89418.0 ms
+[chrome] warm 12/15  witness 1189.7 ms  prove 89324.8 ms
+[chrome] warm 13/15  witness 1207.6 ms  prove 89144.4 ms
+[chrome] warm 14/15  witness 1199.1 ms  prove 89404.7 ms
+[chrome] warm 15/15  witness 1202.8 ms  prove 89270.2 ms
+[chrome] page memory: 1412 MiB
+[chrome] DONE
+chrome T3.2 c1_20 threads=all: 10 warm runs | median total 90479.4 ms | median prove 89277.5 ms | all proofs verified: true
+=== [4/20] 10:46:11  T4.2  c1_12  threads=all  runs=30 ===
+[chrome] config {"mode":"bench","circuit":"c1_12","threads":"all","runs":30,"warmup":5,"kernel":"threads","opt":"ntt","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 220.9 ms
+[chrome] fetched zkey (1.6 MB) + wasm in 43.3 ms
+[chrome] kernel threads (threads, 4 thread(s)) loaded in 75.0 ms; stages: ntt
+[chrome] cold 0/35  witness 82.8 ms  prove 776.3 ms
+[chrome] warmup 1/35  witness 21.0 ms  prove 674.2 ms
+[chrome] warmup 2/35  witness 18.5 ms  prove 612.4 ms
+[chrome] warmup 3/35  witness 19.2 ms  prove 556.7 ms
+[chrome] warmup 4/35  witness 17.5 ms  prove 579.7 ms
+[chrome] warmup 5/35  witness 16.4 ms  prove 561.0 ms
+[chrome] warm 6/35  witness 17.0 ms  prove 576.0 ms
+[chrome] warm 7/35  witness 15.5 ms  prove 560.9 ms
+[chrome] warm 8/35  witness 16.6 ms  prove 584.0 ms
+[chrome] warm 9/35  witness 41.4 ms  prove 567.3 ms
+[chrome] warm 10/35  witness 25.0 ms  prove 650.1 ms
+[chrome] warm 11/35  witness 18.4 ms  prove 571.3 ms
+[chrome] warm 12/35  witness 39.2 ms  prove 557.4 ms
+[chrome] warm 13/35  witness 25.8 ms  prove 657.1 ms
+[chrome] warm 14/35  witness 22.1 ms  prove 574.7 ms
+[chrome] warm 15/35  witness 42.7 ms  prove 573.9 ms
+[chrome] warm 16/35  witness 22.2 ms  prove 655.4 ms
+[chrome] warm 17/35  witness 18.8 ms  prove 564.3 ms
+[chrome] warm 18/35  witness 17.6 ms  prove 566.9 ms
+[chrome] warm 19/35  witness 17.9 ms  prove 563.7 ms
+[chrome] warm 20/35  witness 18.8 ms  prove 566.3 ms
+[chrome] warm 21/35  witness 38.8 ms  prove 571.2 ms
+[chrome] warm 22/35  witness 22.2 ms  prove 640.1 ms
+[chrome] warm 23/35  witness 20.2 ms  prove 581.8 ms
+[chrome] warm 24/35  witness 18.7 ms  prove 587.3 ms
+[chrome] warm 25/35  witness 19.1 ms  prove 569.9 ms
+[chrome] warm 26/35  witness 17.3 ms  prove 562.9 ms
+[chrome] warm 27/35  witness 18.2 ms  prove 565.1 ms
+[chrome] warm 28/35  witness 18.5 ms  prove 590.3 ms
+[chrome] warm 29/35  witness 18.8 ms  prove 560.7 ms
+[chrome] warm 30/35  witness 13.8 ms  prove 574.9 ms
+[chrome] warm 31/35  witness 18.1 ms  prove 559.6 ms
+[chrome] warm 32/35  witness 15.2 ms  prove 568.0 ms
+[chrome] warm 33/35  witness 42.3 ms  prove 558.9 ms
+[chrome] warm 34/35  witness 18.1 ms  prove 652.7 ms
+[chrome] warm 35/35  witness 18.3 ms  prove 573.0 ms
+[chrome] page memory: 40 MiB
+[chrome] DONE
+chrome T4.2 c1_12 threads=all: 30 warm runs | median total 594.8 ms | median prove 571.3 ms | all proofs verified: true
+=== [5/20] 10:48:07  T3.1  c1_20  threads=1  runs=10 ===
+[chrome] config {"mode":"bench","circuit":"c1_20","threads":"1","runs":10,"warmup":5,"kernel":"plain","opt":"qap","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 232.2 ms
+[chrome] fetched zkey (429.7 MB) + wasm in 1697.2 ms
+[chrome] kernel plain (plain, 1 thread(s)) loaded in 60.3 ms; stages: qap
+[chrome] cold 0/15  witness 1146.8 ms  prove 203195.4 ms
+[chrome] warmup 1/15  witness 1357.0 ms  prove 202552.5 ms
+[chrome] warmup 2/15  witness 1392.0 ms  prove 202941.7 ms
+[chrome] warmup 3/15  witness 1413.8 ms  prove 202522.4 ms
+[chrome] warmup 4/15  witness 1477.6 ms  prove 202374.0 ms
+[chrome] warmup 5/15  witness 1467.3 ms  prove 202417.4 ms
+[chrome] warm 6/15  witness 1495.2 ms  prove 202405.9 ms
+[chrome] warm 7/15  witness 1477.0 ms  prove 202430.7 ms
+[chrome] warm 8/15  witness 1462.2 ms  prove 202369.9 ms
+[chrome] warm 9/15  witness 1479.9 ms  prove 202602.7 ms
+[chrome] warm 10/15  witness 1479.4 ms  prove 202399.6 ms
+[chrome] warm 11/15  witness 1478.0 ms  prove 202429.1 ms
+[chrome] warm 12/15  witness 1487.7 ms  prove 202423.2 ms
+[chrome] warm 13/15  witness 1479.2 ms  prove 202404.5 ms
+[chrome] warm 14/15  witness 1493.1 ms  prove 202671.4 ms
+[chrome] warm 15/15  witness 1475.8 ms  prove 202711.9 ms
+[chrome] page memory: 623 MiB
+[chrome] DONE
+chrome T3.1 c1_20 threads=1: 10 warm runs | median total 203907.4 ms | median prove 202426.1 ms | all proofs verified: true
+=== [6/20] 11:43:23  T3.2  c1_16  threads=all  runs=30 ===
+[chrome] config {"mode":"bench","circuit":"c1_16","threads":"all","runs":30,"warmup":5,"kernel":"threads","opt":"qap","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 206.1 ms
+[chrome] fetched zkey (26.7 MB) + wasm in 177.9 ms
+[chrome] kernel threads (threads, 4 thread(s)) loaded in 69.8 ms; stages: qap
+[chrome] cold 0/35  witness 218.5 ms  prove 7133.1 ms
+[chrome] warmup 1/35  witness 169.8 ms  prove 6892.4 ms
+[chrome] warmup 2/35  witness 156.2 ms  prove 6873.8 ms
+[chrome] warmup 3/35  witness 81.0 ms  prove 6880.6 ms
+[chrome] warmup 4/35  witness 98.3 ms  prove 6846.6 ms
+[chrome] warmup 5/35  witness 99.8 ms  prove 6788.8 ms
+[chrome] warm 6/35  witness 106.1 ms  prove 6826.1 ms
+[chrome] warm 7/35  witness 108.8 ms  prove 6834.7 ms
+[chrome] warm 8/35  witness 100.5 ms  prove 6793.6 ms
+[chrome] warm 9/35  witness 102.8 ms  prove 6802.6 ms
+[chrome] warm 10/35  witness 126.0 ms  prove 6758.1 ms
+[chrome] warm 11/35  witness 109.5 ms  prove 6786.5 ms
+[chrome] warm 12/35  witness 99.4 ms  prove 6839.2 ms
+[chrome] warm 13/35  witness 102.2 ms  prove 6773.6 ms
+[chrome] warm 14/35  witness 100.1 ms  prove 6800.0 ms
+[chrome] warm 15/35  witness 98.2 ms  prove 6789.2 ms
+[chrome] warm 16/35  witness 92.1 ms  prove 6806.6 ms
+[chrome] warm 17/35  witness 119.3 ms  prove 6798.1 ms
+[chrome] warm 18/35  witness 110.5 ms  prove 6775.3 ms
+[chrome] warm 19/35  witness 99.9 ms  prove 6795.5 ms
+[chrome] warm 20/35  witness 98.8 ms  prove 6770.8 ms
+[chrome] warm 21/35  witness 94.5 ms  prove 6814.1 ms
+[chrome] warm 22/35  witness 96.9 ms  prove 6790.5 ms
+[chrome] warm 23/35  witness 149.2 ms  prove 6781.3 ms
+[chrome] warm 24/35  witness 191.0 ms  prove 6841.4 ms
+[chrome] warm 25/35  witness 122.7 ms  prove 6803.5 ms
+[chrome] warm 26/35  witness 117.8 ms  prove 6821.0 ms
+[chrome] warm 27/35  witness 114.1 ms  prove 6801.6 ms
+[chrome] warm 28/35  witness 112.3 ms  prove 6782.4 ms
+[chrome] warm 29/35  witness 114.6 ms  prove 6781.0 ms
+[chrome] warm 30/35  witness 113.7 ms  prove 6766.2 ms
+[chrome] warm 31/35  witness 114.7 ms  prove 6833.8 ms
+[chrome] warm 32/35  witness 195.8 ms  prove 6864.2 ms
+[chrome] warm 33/35  witness 116.9 ms  prove 6853.7 ms
+[chrome] warm 34/35  witness 114.3 ms  prove 6850.5 ms
+[chrome] warm 35/35  witness 110.3 ms  prove 6817.1 ms
+[chrome] page memory: 120 MiB
+[chrome] DONE
+chrome T3.2 c1_16 threads=all: 30 warm runs | median total 6907.0 ms | median prove 6800.8 ms | all proofs verified: true
+=== [7/20] 11:49:05  T3.2  c1_18  threads=all  runs=10 ===
+[chrome] config {"mode":"bench","circuit":"c1_18","threads":"all","runs":10,"warmup":5,"kernel":"threads","opt":"qap","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 225.9 ms
+[chrome] fetched zkey (107.4 MB) + wasm in 549.7 ms
+[chrome] kernel threads (threads, 4 thread(s)) loaded in 104.3 ms; stages: qap
+[chrome] cold 0/15  witness 386.0 ms  prove 24313.1 ms
+[chrome] warmup 1/15  witness 352.6 ms  prove 23948.8 ms
+[chrome] warmup 2/15  witness 403.4 ms  prove 23930.8 ms
+[chrome] warmup 3/15  witness 361.0 ms  prove 23922.4 ms
+[chrome] warmup 4/15  witness 401.5 ms  prove 23890.7 ms
+[chrome] warmup 5/15  witness 409.0 ms  prove 23902.1 ms
+[chrome] warm 6/15  witness 389.2 ms  prove 23977.2 ms
+[chrome] warm 7/15  witness 428.2 ms  prove 23988.3 ms
+[chrome] warm 8/15  witness 420.5 ms  prove 23886.1 ms
+[chrome] warm 9/15  witness 382.9 ms  prove 23903.9 ms
+[chrome] warm 10/15  witness 388.8 ms  prove 23883.3 ms
+[chrome] warm 11/15  witness 398.3 ms  prove 24004.5 ms
+[chrome] warm 12/15  witness 406.4 ms  prove 23857.9 ms
+[chrome] warm 13/15  witness 477.5 ms  prove 23916.2 ms
+[chrome] warm 14/15  witness 398.7 ms  prove 23929.5 ms
+[chrome] warm 15/15  witness 386.1 ms  prove 23923.0 ms
+[chrome] page memory: 379 MiB
+[chrome] DONE
+chrome T3.2 c1_18 threads=all: 10 warm runs | median total 24318.6 ms | median prove 23919.6 ms | all proofs verified: true
+=== [8/20] 11:57:08  T3.1  c1_14  threads=all  runs=30 ===
+[chrome] config {"mode":"bench","circuit":"c1_14","threads":"all","runs":30,"warmup":5,"kernel":"plain","opt":"qap","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 236.6 ms
+[chrome] fetched zkey (6.6 MB) + wasm in 74.5 ms
+[chrome] kernel plain (plain, 1 thread(s)) loaded in 16.8 ms; stages: qap
+[chrome] cold 0/35  witness 108.9 ms  prove 2266.4 ms
+[chrome] warmup 1/35  witness 33.4 ms  prove 1963.3 ms
+[chrome] warmup 2/35  witness 69.6 ms  prove 2035.6 ms
+[chrome] warmup 3/35  witness 75.6 ms  prove 2052.7 ms
+[chrome] warmup 4/35  witness 73.8 ms  prove 2063.6 ms
+[chrome] warmup 5/35  witness 34.0 ms  prove 1949.9 ms
+[chrome] warm 6/35  witness 34.4 ms  prove 1976.0 ms
+[chrome] warm 7/35  witness 59.1 ms  prove 1969.9 ms
+[chrome] warm 8/35  witness 34.9 ms  prove 1957.7 ms
+[chrome] warm 9/35  witness 69.1 ms  prove 2024.9 ms
+[chrome] warm 10/35  witness 71.3 ms  prove 2051.2 ms
+[chrome] warm 11/35  witness 32.3 ms  prove 2033.1 ms
+[chrome] warm 12/35  witness 32.9 ms  prove 1960.2 ms
+[chrome] warm 13/35  witness 58.1 ms  prove 1964.6 ms
+[chrome] warm 14/35  witness 32.1 ms  prove 1963.6 ms
+[chrome] warm 15/35  witness 32.0 ms  prove 1949.7 ms
+[chrome] warm 16/35  witness 31.1 ms  prove 1965.0 ms
+[chrome] warm 17/35  witness 79.3 ms  prove 2049.1 ms
+[chrome] warm 18/35  witness 68.6 ms  prove 2045.7 ms
+[chrome] warm 19/35  witness 32.1 ms  prove 1972.1 ms
+[chrome] warm 20/35  witness 34.9 ms  prove 1965.6 ms
+[chrome] warm 21/35  witness 60.3 ms  prove 1957.6 ms
+[chrome] warm 22/35  witness 34.4 ms  prove 1961.6 ms
+[chrome] warm 23/35  witness 34.4 ms  prove 1955.1 ms
+[chrome] warm 24/35  witness 73.2 ms  prove 2042.4 ms
+[chrome] warm 25/35  witness 41.7 ms  prove 1950.5 ms
+[chrome] warm 26/35  witness 33.8 ms  prove 1957.2 ms
+[chrome] warm 27/35  witness 45.4 ms  prove 2007.0 ms
+[chrome] warm 28/35  witness 68.8 ms  prove 2017.1 ms
+[chrome] warm 29/35  witness 78.1 ms  prove 2034.7 ms
+[chrome] warm 30/35  witness 67.2 ms  prove 2038.4 ms
+[chrome] warm 31/35  witness 67.7 ms  prove 2047.1 ms
+[chrome] warm 32/35  witness 66.6 ms  prove 2022.8 ms
+[chrome] warm 33/35  witness 71.2 ms  prove 2042.3 ms
+[chrome] warm 34/35  witness 75.5 ms  prove 2057.0 ms
+[chrome] warm 35/35  witness 65.1 ms  prove 2024.5 ms
+[chrome] page memory: 47 MiB
+[chrome] DONE
+chrome T3.1 c1_14 threads=all: 30 warm runs | median total 2040.6 ms | median prove 1991.5 ms | all proofs verified: true
+=== [9/20] 11:59:08  T3.1  c1_12  threads=all  runs=30 ===
+[chrome] config {"mode":"bench","circuit":"c1_12","threads":"all","runs":30,"warmup":5,"kernel":"plain","opt":"qap","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 223.2 ms
+[chrome] fetched zkey (1.6 MB) + wasm in 42.5 ms
+[chrome] kernel plain (plain, 1 thread(s)) loaded in 18.9 ms; stages: qap
+[chrome] cold 0/35  witness 81.0 ms  prove 794.5 ms
+[chrome] warmup 1/35  witness 24.4 ms  prove 679.2 ms
+[chrome] warmup 2/35  witness 21.6 ms  prove 624.6 ms
+[chrome] warmup 3/35  witness 19.8 ms  prove 579.5 ms
+[chrome] warmup 4/35  witness 19.0 ms  prove 585.2 ms
+[chrome] warmup 5/35  witness 16.8 ms  prove 578.7 ms
+[chrome] warm 6/35  witness 18.1 ms  prove 577.0 ms
+[chrome] warm 7/35  witness 18.1 ms  prove 580.2 ms
+[chrome] warm 8/35  witness 18.8 ms  prove 590.9 ms
+[chrome] warm 9/35  witness 17.0 ms  prove 585.9 ms
+[chrome] warm 10/35  witness 40.8 ms  prove 587.2 ms
+[chrome] warm 11/35  witness 24.9 ms  prove 653.3 ms
+[chrome] warm 12/35  witness 20.9 ms  prove 582.2 ms
+[chrome] warm 13/35  witness 18.1 ms  prove 579.1 ms
+[chrome] warm 14/35  witness 21.0 ms  prove 589.9 ms
+[chrome] warm 15/35  witness 18.9 ms  prove 589.7 ms
+[chrome] warm 16/35  witness 17.6 ms  prove 574.4 ms
+[chrome] warm 17/35  witness 42.5 ms  prove 585.6 ms
+[chrome] warm 18/35  witness 42.1 ms  prove 584.7 ms
+[chrome] warm 19/35  witness 23.7 ms  prove 653.6 ms
+[chrome] warm 20/35  witness 17.3 ms  prove 592.9 ms
+[chrome] warm 21/35  witness 17.7 ms  prove 566.5 ms
+[chrome] warm 22/35  witness 15.3 ms  prove 586.8 ms
+[chrome] warm 23/35  witness 41.7 ms  prove 589.1 ms
+[chrome] warm 24/35  witness 17.4 ms  prove 691.5 ms
+[chrome] warm 25/35  witness 36.3 ms  prove 589.4 ms
+[chrome] warm 26/35  witness 35.7 ms  prove 569.9 ms
+[chrome] warm 27/35  witness 23.1 ms  prove 663.9 ms
+[chrome] warm 28/35  witness 15.9 ms  prove 590.4 ms
+[chrome] warm 29/35  witness 36.8 ms  prove 569.3 ms
+[chrome] warm 30/35  witness 21.1 ms  prove 670.2 ms
+[chrome] warm 31/35  witness 19.9 ms  prove 584.4 ms
+[chrome] warm 32/35  witness 37.1 ms  prove 588.0 ms
+[chrome] warm 33/35  witness 35.6 ms  prove 583.1 ms
+[chrome] warm 34/35  witness 22.8 ms  prove 671.0 ms
+[chrome] warm 35/35  witness 14.9 ms  prove 581.9 ms
+[chrome] page memory: 33 MiB
+[chrome] DONE
+chrome T3.1 c1_12 threads=all: 30 warm runs | median total 609.9 ms | median prove 587.0 ms | all proofs verified: true
+=== [10/20] 12:00:21  T3.1  c1_14  threads=1  runs=30 ===
+[chrome] config {"mode":"bench","circuit":"c1_14","threads":"1","runs":30,"warmup":5,"kernel":"plain","opt":"qap","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 305.9 ms
+[chrome] fetched zkey (6.6 MB) + wasm in 104.8 ms
+[chrome] kernel plain (plain, 1 thread(s)) loaded in 21.5 ms; stages: qap
+[chrome] cold 0/35  witness 140.2 ms  prove 5003.3 ms
+[chrome] warmup 1/35  witness 30.5 ms  prove 4674.2 ms
+[chrome] warmup 2/35  witness 35.2 ms  prove 4669.7 ms
+[chrome] warmup 3/35  witness 59.0 ms  prove 4703.3 ms
+[chrome] warmup 4/35  witness 30.4 ms  prove 4666.9 ms
+[chrome] warmup 5/35  witness 30.8 ms  prove 4673.4 ms
+[chrome] warm 6/35  witness 34.3 ms  prove 4680.5 ms
+[chrome] warm 7/35  witness 30.5 ms  prove 4662.4 ms
+[chrome] warm 8/35  witness 32.7 ms  prove 4679.1 ms
+[chrome] warm 9/35  witness 36.4 ms  prove 4673.7 ms
+[chrome] warm 10/35  witness 30.2 ms  prove 4665.1 ms
+[chrome] warm 11/35  witness 69.5 ms  prove 4680.4 ms
+[chrome] warm 12/35  witness 36.6 ms  prove 4689.7 ms
+[chrome] warm 13/35  witness 37.8 ms  prove 4685.7 ms
+[chrome] warm 14/35  witness 58.4 ms  prove 4691.6 ms
+[chrome] warm 15/35  witness 68.4 ms  prove 4689.6 ms
+[chrome] warm 16/35  witness 32.6 ms  prove 4677.6 ms
+[chrome] warm 17/35  witness 30.7 ms  prove 4681.7 ms
+[chrome] warm 18/35  witness 57.6 ms  prove 4688.1 ms
+[chrome] warm 19/35  witness 67.2 ms  prove 4695.7 ms
+[chrome] warm 20/35  witness 31.6 ms  prove 4680.0 ms
+[chrome] warm 21/35  witness 34.8 ms  prove 4688.4 ms
+[chrome] warm 22/35  witness 57.4 ms  prove 4679.3 ms
+[chrome] warm 23/35  witness 32.0 ms  prove 4678.1 ms
+[chrome] warm 24/35  witness 31.3 ms  prove 4677.4 ms
+[chrome] warm 25/35  witness 30.6 ms  prove 4676.0 ms
+[chrome] warm 26/35  witness 29.9 ms  prove 4677.8 ms
+[chrome] warm 27/35  witness 75.5 ms  prove 4701.7 ms
+[chrome] warm 28/35  witness 70.0 ms  prove 4681.2 ms
+[chrome] warm 29/35  witness 33.2 ms  prove 4682.8 ms
+[chrome] warm 30/35  witness 68.5 ms  prove 4684.1 ms
+[chrome] warm 31/35  witness 32.8 ms  prove 4671.4 ms
+[chrome] warm 32/35  witness 68.5 ms  prove 4684.0 ms
+[chrome] warm 33/35  witness 75.3 ms  prove 4683.0 ms
+[chrome] warm 34/35  witness 69.3 ms  prove 4684.8 ms
+[chrome] warm 35/35  witness 32.0 ms  prove 4682.4 ms
+[chrome] page memory: 43 MiB
+[chrome] DONE
+chrome T3.1 c1_14 threads=1: 30 warm runs | median total 4719.6 ms | median prove 4681.5 ms | all proofs verified: true
+=== [11/20] 12:04:03  T3.2  c1_12  threads=all  runs=30 ===
+[chrome] config {"mode":"bench","circuit":"c1_12","threads":"all","runs":30,"warmup":5,"kernel":"threads","opt":"qap","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 262.3 ms
+[chrome] fetched zkey (1.6 MB) + wasm in 42.5 ms
+[chrome] kernel threads (threads, 4 thread(s)) loaded in 69.1 ms; stages: qap
+[chrome] cold 0/35  witness 81.6 ms  prove 787.1 ms
+[chrome] warmup 1/35  witness 23.9 ms  prove 669.1 ms
+[chrome] warmup 2/35  witness 40.6 ms  prove 614.6 ms
+[chrome] warmup 3/35  witness 22.8 ms  prove 653.9 ms
+[chrome] warmup 4/35  witness 20.7 ms  prove 579.2 ms
+[chrome] warmup 5/35  witness 41.9 ms  prove 574.1 ms
+[chrome] warm 6/35  witness 22.0 ms  prove 657.6 ms
+[chrome] warm 7/35  witness 21.5 ms  prove 580.1 ms
+[chrome] warm 8/35  witness 19.0 ms  prove 573.8 ms
+[chrome] warm 9/35  witness 17.8 ms  prove 573.1 ms
+[chrome] warm 10/35  witness 17.6 ms  prove 577.0 ms
+[chrome] warm 11/35  witness 18.7 ms  prove 578.4 ms
+[chrome] warm 12/35  witness 43.7 ms  prove 577.9 ms
+[chrome] warm 13/35  witness 24.9 ms  prove 663.8 ms
+[chrome] warm 14/35  witness 19.7 ms  prove 579.6 ms
+[chrome] warm 15/35  witness 19.3 ms  prove 581.4 ms
+[chrome] warm 16/35  witness 19.3 ms  prove 565.3 ms
+[chrome] warm 17/35  witness 15.3 ms  prove 568.0 ms
+[chrome] warm 18/35  witness 14.8 ms  prove 577.0 ms
+[chrome] warm 19/35  witness 14.1 ms  prove 582.6 ms
+[chrome] warm 20/35  witness 17.5 ms  prove 585.0 ms
+[chrome] warm 21/35  witness 13.7 ms  prove 553.3 ms
+[chrome] warm 22/35  witness 18.5 ms  prove 592.4 ms
+[chrome] warm 23/35  witness 15.9 ms  prove 572.5 ms
+[chrome] warm 24/35  witness 36.6 ms  prove 600.1 ms
+[chrome] warm 25/35  witness 25.2 ms  prove 663.9 ms
+[chrome] warm 26/35  witness 14.8 ms  prove 575.6 ms
+[chrome] warm 27/35  witness 36.2 ms  prove 579.4 ms
+[chrome] warm 28/35  witness 20.8 ms  prove 662.5 ms
+[chrome] warm 29/35  witness 15.7 ms  prove 579.4 ms
+[chrome] warm 30/35  witness 36.1 ms  prove 592.0 ms
+[chrome] warm 31/35  witness 21.7 ms  prove 654.1 ms
+[chrome] warm 32/35  witness 19.2 ms  prove 583.5 ms
+[chrome] warm 33/35  witness 20.1 ms  prove 568.6 ms
+[chrome] warm 34/35  witness 14.1 ms  prove 583.5 ms
+[chrome] warm 35/35  witness 39.0 ms  prove 575.8 ms
+[chrome] page memory: 41 MiB
+[chrome] DONE
+chrome T3.2 c1_12 threads=all: 30 warm runs | median total 600.0 ms | median prove 579.5 ms | all proofs verified: true
+=== [12/20] 12:05:58  T3.2  c1_14  threads=all  runs=30 ===
+[chrome] config {"mode":"bench","circuit":"c1_14","threads":"all","runs":30,"warmup":5,"kernel":"threads","opt":"qap","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 234.5 ms
+[chrome] fetched zkey (6.6 MB) + wasm in 79.8 ms
+[chrome] kernel threads (threads, 4 thread(s)) loaded in 69.2 ms; stages: qap
+[chrome] cold 0/35  witness 110.7 ms  prove 2272.7 ms
+[chrome] warmup 1/35  witness 69.0 ms  prove 2034.2 ms
+[chrome] warmup 2/35  witness 33.4 ms  prove 1967.3 ms
+[chrome] warmup 3/35  witness 33.6 ms  prove 1962.3 ms
+[chrome] warmup 4/35  witness 77.2 ms  prove 2037.3 ms
+[chrome] warmup 5/35  witness 31.5 ms  prove 1948.4 ms
+[chrome] warm 6/35  witness 33.1 ms  prove 1963.9 ms
+[chrome] warm 7/35  witness 57.2 ms  prove 1995.7 ms
+[chrome] warm 8/35  witness 33.7 ms  prove 1965.7 ms
+[chrome] warm 9/35  witness 31.4 ms  prove 1969.3 ms
+[chrome] warm 10/35  witness 33.0 ms  prove 1960.5 ms
+[chrome] warm 11/35  witness 34.7 ms  prove 1986.5 ms
+[chrome] warm 12/35  witness 34.8 ms  prove 1960.6 ms
+[chrome] warm 13/35  witness 36.2 ms  prove 1969.5 ms
+[chrome] warm 14/35  witness 71.8 ms  prove 2056.6 ms
+[chrome] warm 15/35  witness 35.5 ms  prove 1963.7 ms
+[chrome] warm 16/35  witness 34.1 ms  prove 1964.1 ms
+[chrome] warm 17/35  witness 59.0 ms  prove 1971.5 ms
+[chrome] warm 18/35  witness 32.8 ms  prove 1954.8 ms
+[chrome] warm 19/35  witness 34.4 ms  prove 1949.4 ms
+[chrome] warm 20/35  witness 33.0 ms  prove 1973.1 ms
+[chrome] warm 21/35  witness 70.0 ms  prove 2032.4 ms
+[chrome] warm 22/35  witness 78.2 ms  prove 2030.2 ms
+[chrome] warm 23/35  witness 32.1 ms  prove 1964.3 ms
+[chrome] warm 24/35  witness 32.9 ms  prove 1971.5 ms
+[chrome] warm 25/35  witness 57.9 ms  prove 1971.4 ms
+[chrome] warm 26/35  witness 68.5 ms  prove 2033.0 ms
+[chrome] warm 27/35  witness 31.7 ms  prove 1960.3 ms
+[chrome] warm 28/35  witness 34.4 ms  prove 1946.6 ms
+[chrome] warm 29/35  witness 59.7 ms  prove 2009.9 ms
+[chrome] warm 30/35  witness 36.4 ms  prove 1950.1 ms
+[chrome] warm 31/35  witness 31.9 ms  prove 1955.2 ms
+[chrome] warm 32/35  witness 33.4 ms  prove 1970.1 ms
+[chrome] warm 33/35  witness 33.1 ms  prove 1961.9 ms
+[chrome] warm 34/35  witness 31.3 ms  prove 1968.0 ms
+[chrome] warm 35/35  witness 78.2 ms  prove 2015.2 ms
+[chrome] page memory: 56 MiB
+[chrome] DONE
+chrome T3.2 c1_14 threads=all: 30 warm runs | median total 2000.0 ms | median prove 1968.6 ms | all proofs verified: true
+=== [13/20] 12:08:45  T3.1  c1_20  threads=all  runs=10 ===
+[chrome] config {"mode":"bench","circuit":"c1_20","threads":"all","runs":10,"warmup":5,"kernel":"plain","opt":"qap","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 221.6 ms
+[chrome] fetched zkey (429.7 MB) + wasm in 1660.9 ms
+[chrome] kernel plain (plain, 1 thread(s)) loaded in 59.1 ms; stages: qap
+[chrome] cold 0/15  witness 1129.5 ms  prove 90509.6 ms
+[chrome] warmup 1/15  witness 1228.0 ms  prove 89736.0 ms
+[chrome] warmup 2/15  witness 1196.7 ms  prove 89554.6 ms
+[chrome] warmup 3/15  witness 1208.5 ms  prove 89384.0 ms
+[chrome] warmup 4/15  witness 1191.4 ms  prove 89395.7 ms
+[chrome] warmup 5/15  witness 1196.0 ms  prove 89480.6 ms
+[chrome] warm 6/15  witness 1185.8 ms  prove 89509.6 ms
+[chrome] warm 7/15  witness 1259.0 ms  prove 89453.9 ms
+[chrome] warm 8/15  witness 1197.6 ms  prove 89592.8 ms
+[chrome] warm 9/15  witness 1205.8 ms  prove 89653.8 ms
+[chrome] warm 10/15  witness 1202.3 ms  prove 89445.2 ms
+[chrome] warm 11/15  witness 1216.8 ms  prove 89491.1 ms
+[chrome] warm 12/15  witness 1193.8 ms  prove 89701.2 ms
+[chrome] warm 13/15  witness 1230.6 ms  prove 89517.6 ms
+[chrome] warm 14/15  witness 1229.9 ms  prove 89920.7 ms
+[chrome] warm 15/15  witness 1211.1 ms  prove 89718.7 ms
+[chrome] page memory: 1383 MiB
+[chrome] DONE
+chrome T3.1 c1_20 threads=all: 10 warm runs | median total 90769.3 ms | median prove 89555.2 ms | all proofs verified: true
+=== [14/20] 12:33:52  T3.1  c1_18  threads=1  runs=10 ===
+[chrome] config {"mode":"bench","circuit":"c1_18","threads":"1","runs":10,"warmup":5,"kernel":"plain","opt":"qap","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 248.8 ms
+[chrome] fetched zkey (107.4 MB) + wasm in 521.3 ms
+[chrome] kernel plain (plain, 1 thread(s)) loaded in 59.1 ms; stages: qap
+[chrome] cold 0/15  witness 345.1 ms  prove 56728.2 ms
+[chrome] warmup 1/15  witness 466.6 ms  prove 56549.6 ms
+[chrome] warmup 2/15  witness 364.6 ms  prove 56552.8 ms
+[chrome] warmup 3/15  witness 385.4 ms  prove 56431.8 ms
+[chrome] warmup 4/15  witness 360.2 ms  prove 56550.7 ms
+[chrome] warmup 5/15  witness 406.6 ms  prove 56356.7 ms
+[chrome] warm 6/15  witness 361.2 ms  prove 56499.4 ms
+[chrome] warm 7/15  witness 401.7 ms  prove 56372.3 ms
+[chrome] warm 8/15  witness 361.3 ms  prove 56456.4 ms
+[chrome] warm 9/15  witness 402.3 ms  prove 56389.3 ms
+[chrome] warm 10/15  witness 360.5 ms  prove 56500.4 ms
+[chrome] warm 11/15  witness 399.9 ms  prove 56383.8 ms
+[chrome] warm 12/15  witness 381.7 ms  prove 56501.8 ms
+[chrome] warm 13/15  witness 401.1 ms  prove 56407.2 ms
+[chrome] warm 14/15  witness 356.9 ms  prove 56494.1 ms
+[chrome] warm 15/15  witness 410.1 ms  prove 56401.2 ms
+[chrome] page memory: 181 MiB
+[chrome] DONE
+chrome T3.1 c1_18 threads=1: 10 warm runs | median total 56814.5 ms | median prove 56431.8 ms | all proofs verified: true
+=== [15/20] 12:49:51  T3.1  c1_12  threads=1  runs=30 ===
+[chrome] config {"mode":"bench","circuit":"c1_12","threads":"1","runs":30,"warmup":5,"kernel":"plain","opt":"qap","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 222.7 ms
+[chrome] fetched zkey (1.6 MB) + wasm in 43.4 ms
+[chrome] kernel plain (plain, 1 thread(s)) loaded in 19.5 ms; stages: qap
+[chrome] cold 0/35  witness 81.3 ms  prove 1484.7 ms
+[chrome] warmup 1/35  witness 22.2 ms  prove 1358.0 ms
+[chrome] warmup 2/35  witness 21.9 ms  prove 1313.9 ms
+[chrome] warmup 3/35  witness 20.7 ms  prove 1318.5 ms
+[chrome] warmup 4/35  witness 42.2 ms  prove 1313.3 ms
+[chrome] warmup 5/35  witness 24.1 ms  prove 1325.1 ms
+[chrome] warm 6/35  witness 22.6 ms  prove 1320.2 ms
+[chrome] warm 7/35  witness 43.6 ms  prove 1312.9 ms
+[chrome] warm 8/35  witness 25.1 ms  prove 1334.9 ms
+[chrome] warm 9/35  witness 22.0 ms  prove 1326.7 ms
+[chrome] warm 10/35  witness 19.1 ms  prove 1326.4 ms
+[chrome] warm 11/35  witness 23.2 ms  prove 1326.9 ms
+[chrome] warm 12/35  witness 18.1 ms  prove 1325.6 ms
+[chrome] warm 13/35  witness 19.2 ms  prove 1325.4 ms
+[chrome] warm 14/35  witness 23.1 ms  prove 1327.1 ms
+[chrome] warm 15/35  witness 19.9 ms  prove 1324.8 ms
+[chrome] warm 16/35  witness 18.8 ms  prove 1325.6 ms
+[chrome] warm 17/35  witness 22.9 ms  prove 1345.1 ms
+[chrome] warm 18/35  witness 23.5 ms  prove 1319.5 ms
+[chrome] warm 19/35  witness 17.1 ms  prove 1319.3 ms
+[chrome] warm 20/35  witness 22.4 ms  prove 1336.0 ms
+[chrome] warm 21/35  witness 16.2 ms  prove 1326.7 ms
+[chrome] warm 22/35  witness 18.0 ms  prove 1324.3 ms
+[chrome] warm 23/35  witness 16.7 ms  prove 1319.8 ms
+[chrome] warm 24/35  witness 16.9 ms  prove 1316.8 ms
+[chrome] warm 25/35  witness 42.4 ms  prove 1326.5 ms
+[chrome] warm 26/35  witness 24.0 ms  prove 1334.5 ms
+[chrome] warm 27/35  witness 42.5 ms  prove 1320.8 ms
+[chrome] warm 28/35  witness 24.0 ms  prove 1337.4 ms
+[chrome] warm 29/35  witness 21.3 ms  prove 1321.7 ms
+[chrome] warm 30/35  witness 39.4 ms  prove 1317.5 ms
+[chrome] warm 31/35  witness 21.0 ms  prove 1329.8 ms
+[chrome] warm 32/35  witness 22.6 ms  prove 1326.2 ms
+[chrome] warm 33/35  witness 41.1 ms  prove 1323.3 ms
+[chrome] warm 34/35  witness 40.4 ms  prove 1318.6 ms
+[chrome] warm 35/35  witness 39.7 ms  prove 1318.4 ms
+[chrome] page memory: 36 MiB
+[chrome] DONE
+chrome T3.1 c1_12 threads=1: 30 warm runs | median total 1349.5 ms | median prove 1325.5 ms | all proofs verified: true
+=== [16/20] 12:51:32  T3.1  c1_18  threads=all  runs=10 ===
+[chrome] config {"mode":"bench","circuit":"c1_18","threads":"all","runs":10,"warmup":5,"kernel":"plain","opt":"qap","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 215.6 ms
+[chrome] fetched zkey (107.4 MB) + wasm in 520.3 ms
+[chrome] kernel plain (plain, 1 thread(s)) loaded in 58.8 ms; stages: qap
+[chrome] cold 0/15  witness 360.9 ms  prove 24382.4 ms
+[chrome] warmup 1/15  witness 370.3 ms  prove 23927.1 ms
+[chrome] warmup 2/15  witness 358.5 ms  prove 23899.3 ms
+[chrome] warmup 3/15  witness 365.1 ms  prove 23934.1 ms
+[chrome] warmup 4/15  witness 376.3 ms  prove 23881.1 ms
+[chrome] warmup 5/15  witness 386.7 ms  prove 23875.6 ms
+[chrome] warm 6/15  witness 387.2 ms  prove 23938.8 ms
+[chrome] warm 7/15  witness 408.2 ms  prove 23960.7 ms
+[chrome] warm 8/15  witness 400.4 ms  prove 23953.0 ms
+[chrome] warm 9/15  witness 402.7 ms  prove 23921.5 ms
+[chrome] warm 10/15  witness 402.0 ms  prove 23945.3 ms
+[chrome] warm 11/15  witness 404.1 ms  prove 23889.6 ms
+[chrome] warm 12/15  witness 392.8 ms  prove 23897.9 ms
+[chrome] warm 13/15  witness 404.5 ms  prove 23889.9 ms
+[chrome] warm 14/15  witness 377.1 ms  prove 24003.0 ms
+[chrome] warm 15/15  witness 371.3 ms  prove 23919.3 ms
+[chrome] page memory: 365 MiB
+[chrome] DONE
+chrome T3.1 c1_18 threads=all: 10 warm runs | median total 24325.1 ms | median prove 23930.2 ms | all proofs verified: true
+=== [17/20] 12:58:53  T3.1  c1_16  threads=1  runs=30 ===
+[chrome] config {"mode":"bench","circuit":"c1_16","threads":"1","runs":30,"warmup":5,"kernel":"plain","opt":"qap","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 200.6 ms
+[chrome] fetched zkey (26.7 MB) + wasm in 173.5 ms
+[chrome] kernel plain (plain, 1 thread(s)) loaded in 17.4 ms; stages: qap
+[chrome] cold 0/35  witness 216.2 ms  prove 16084.3 ms
+[chrome] warmup 1/35  witness 153.4 ms  prove 15911.3 ms
+[chrome] warmup 2/35  witness 82.5 ms  prove 15866.6 ms
+[chrome] warmup 3/35  witness 87.8 ms  prove 15872.8 ms
+[chrome] warmup 4/35  witness 163.2 ms  prove 15897.9 ms
+[chrome] warmup 5/35  witness 94.1 ms  prove 15879.3 ms
+[chrome] warm 6/35  witness 110.6 ms  prove 15861.3 ms
+[chrome] warm 7/35  witness 99.5 ms  prove 15882.8 ms
+[chrome] warm 8/35  witness 111.6 ms  prove 15874.3 ms
+[chrome] warm 9/35  witness 177.9 ms  prove 15855.0 ms
+[chrome] warm 10/35  witness 103.2 ms  prove 15842.4 ms
+[chrome] warm 11/35  witness 104.4 ms  prove 15849.7 ms
+[chrome] warm 12/35  witness 195.3 ms  prove 15859.7 ms
+[chrome] warm 13/35  witness 106.5 ms  prove 15880.1 ms
+[chrome] warm 14/35  witness 112.1 ms  prove 15838.8 ms
+[chrome] warm 15/35  witness 107.4 ms  prove 15832.8 ms
+[chrome] warm 16/35  witness 107.0 ms  prove 15829.1 ms
+[chrome] warm 17/35  witness 105.6 ms  prove 15849.7 ms
+[chrome] warm 18/35  witness 194.7 ms  prove 15849.9 ms
+[chrome] warm 19/35  witness 171.1 ms  prove 15840.9 ms
+[chrome] warm 20/35  witness 165.5 ms  prove 15859.8 ms
+[chrome] warm 21/35  witness 110.0 ms  prove 15843.4 ms
+[chrome] warm 22/35  witness 179.9 ms  prove 15836.2 ms
+[chrome] warm 23/35  witness 103.5 ms  prove 15856.0 ms
+[chrome] warm 24/35  witness 112.8 ms  prove 15851.2 ms
+[chrome] warm 25/35  witness 102.8 ms  prove 15851.8 ms
+[chrome] warm 26/35  witness 102.0 ms  prove 15866.1 ms
+[chrome] warm 27/35  witness 200.2 ms  prove 15842.0 ms
+[chrome] warm 28/35  witness 104.0 ms  prove 15837.9 ms
+[chrome] warm 29/35  witness 109.4 ms  prove 15831.9 ms
+[chrome] warm 30/35  witness 106.0 ms  prove 15855.3 ms
+[chrome] warm 31/35  witness 105.0 ms  prove 15826.9 ms
+[chrome] warm 32/35  witness 108.1 ms  prove 15860.2 ms
+[chrome] warm 33/35  witness 100.9 ms  prove 15849.5 ms
+[chrome] warm 34/35  witness 112.5 ms  prove 15827.7 ms
+[chrome] warm 35/35  witness 132.0 ms  prove 15834.6 ms
+[chrome] page memory: 71 MiB
+[chrome] DONE
+chrome T3.1 c1_16 threads=1: 30 warm runs | median total 15962.6 ms | median prove 15849.7 ms | all proofs verified: true
+=== [18/20] 13:09:18  T4.2  c1_20  threads=all  runs=10 ===
+[chrome] config {"mode":"bench","circuit":"c1_20","threads":"all","runs":10,"warmup":5,"kernel":"threads","opt":"ntt","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 220.0 ms
+[chrome] fetched zkey (429.7 MB) + wasm in 1587.0 ms
+[chrome] kernel threads (threads, 4 thread(s)) loaded in 112.7 ms; stages: ntt
+[chrome] cold 0/15  witness 1137.3 ms  prove 86604.1 ms
+[chrome] warmup 1/15  witness 1211.1 ms  prove 86053.9 ms
+[chrome] warmup 2/15  witness 1215.6 ms  prove 86161.1 ms
+[chrome] warmup 3/15  witness 1197.5 ms  prove 86119.8 ms
+[chrome] warmup 4/15  witness 1171.5 ms  prove 86172.2 ms
+[chrome] warmup 5/15  witness 1210.2 ms  prove 86059.2 ms
+[chrome] warm 6/15  witness 1183.9 ms  prove 86035.6 ms
+[chrome] warm 7/15  witness 1236.4 ms  prove 86314.1 ms
+[chrome] warm 8/15  witness 1223.4 ms  prove 86325.8 ms
+[chrome] warm 9/15  witness 1174.4 ms  prove 86387.2 ms
+[chrome] warm 10/15  witness 1190.4 ms  prove 85996.4 ms
+[chrome] warm 11/15  witness 1231.2 ms  prove 85936.6 ms
+[chrome] warm 12/15  witness 1202.2 ms  prove 86295.3 ms
+[chrome] warm 13/15  witness 1200.3 ms  prove 86267.3 ms
+[chrome] warm 14/15  witness 1169.6 ms  prove 86089.7 ms
+[chrome] warm 15/15  witness 1222.2 ms  prove 86039.7 ms
+[chrome] page memory: 1170 MiB
+[chrome] DONE
+chrome T4.2 c1_20 threads=all: 10 warm runs | median total 87364.8 ms | median prove 86178.5 ms | all proofs verified: true
+=== [19/20] 13:34:10  T3.1  c1_16  threads=all  runs=30 ===
+[chrome] config {"mode":"bench","circuit":"c1_16","threads":"all","runs":30,"warmup":5,"kernel":"plain","opt":"qap","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 234.6 ms
+[chrome] fetched zkey (26.7 MB) + wasm in 171.1 ms
+[chrome] kernel plain (plain, 1 thread(s)) loaded in 17.5 ms; stages: qap
+[chrome] cold 0/35  witness 204.8 ms  prove 7183.2 ms
+[chrome] warmup 1/35  witness 89.4 ms  prove 6841.3 ms
+[chrome] warmup 2/35  witness 96.5 ms  prove 6857.7 ms
+[chrome] warmup 3/35  witness 91.5 ms  prove 6885.7 ms
+[chrome] warmup 4/35  witness 94.1 ms  prove 6848.1 ms
+[chrome] warmup 5/35  witness 175.8 ms  prove 6879.5 ms
+[chrome] warm 6/35  witness 179.7 ms  prove 6892.0 ms
+[chrome] warm 7/35  witness 95.8 ms  prove 6863.2 ms
+[chrome] warm 8/35  witness 102.0 ms  prove 6879.9 ms
+[chrome] warm 9/35  witness 96.2 ms  prove 6883.2 ms
+[chrome] warm 10/35  witness 98.4 ms  prove 6799.8 ms
+[chrome] warm 11/35  witness 99.6 ms  prove 6894.6 ms
+[chrome] warm 12/35  witness 169.2 ms  prove 6880.5 ms
+[chrome] warm 13/35  witness 107.6 ms  prove 6849.5 ms
+[chrome] warm 14/35  witness 112.6 ms  prove 6848.4 ms
+[chrome] warm 15/35  witness 107.1 ms  prove 6850.7 ms
+[chrome] warm 16/35  witness 99.3 ms  prove 6815.6 ms
+[chrome] warm 17/35  witness 154.6 ms  prove 6840.8 ms
+[chrome] warm 18/35  witness 112.5 ms  prove 6849.2 ms
+[chrome] warm 19/35  witness 104.5 ms  prove 6865.0 ms
+[chrome] warm 20/35  witness 143.0 ms  prove 6801.1 ms
+[chrome] warm 21/35  witness 102.2 ms  prove 6863.3 ms
+[chrome] warm 22/35  witness 106.4 ms  prove 6795.4 ms
+[chrome] warm 23/35  witness 99.6 ms  prove 6853.1 ms
+[chrome] warm 24/35  witness 125.5 ms  prove 6786.8 ms
+[chrome] warm 25/35  witness 99.5 ms  prove 6828.0 ms
+[chrome] warm 26/35  witness 116.6 ms  prove 6803.4 ms
+[chrome] warm 27/35  witness 102.6 ms  prove 6852.7 ms
+[chrome] warm 28/35  witness 100.1 ms  prove 6792.4 ms
+[chrome] warm 29/35  witness 148.5 ms  prove 6805.1 ms
+[chrome] warm 30/35  witness 107.5 ms  prove 6778.2 ms
+[chrome] warm 31/35  witness 111.6 ms  prove 6823.3 ms
+[chrome] warm 32/35  witness 111.8 ms  prove 6826.4 ms
+[chrome] warm 33/35  witness 113.2 ms  prove 6811.9 ms
+[chrome] warm 34/35  witness 113.1 ms  prove 6819.2 ms
+[chrome] warm 35/35  witness 114.1 ms  prove 6800.5 ms
+[chrome] page memory: 110 MiB
+[chrome] DONE
+chrome T3.1 c1_16 threads=all: 30 warm runs | median total 6953.2 ms | median prove 6834.4 ms | all proofs verified: true
+=== [20/20] 13:39:13  T4.2  c1_18  threads=all  runs=10 ===
+[chrome] config {"mode":"bench","circuit":"c1_18","threads":"all","runs":10,"warmup":5,"kernel":"threads","opt":"ntt","builds":"","iters":"","reps":""}
+[chrome] crossOriginIsolated=true  hardwareConcurrency=4
+[chrome] Failed to load resource: the server responded with a status of 403 (Forbidden)
+[chrome] worker ready in 236.7 ms
+[chrome] fetched zkey (107.4 MB) + wasm in 524.6 ms
+[chrome] kernel threads (threads, 4 thread(s)) loaded in 110.6 ms; stages: ntt
+[chrome] cold 0/15  witness 345.6 ms  prove 23491.8 ms
+[chrome] warmup 1/15  witness 345.9 ms  prove 23169.2 ms
+[chrome] warmup 2/15  witness 353.4 ms  prove 23196.1 ms
+[chrome] warmup 3/15  witness 377.7 ms  prove 23219.5 ms
+[chrome] warmup 4/15  witness 388.2 ms  prove 23107.3 ms
+[chrome] warmup 5/15  witness 349.3 ms  prove 23096.4 ms
+[chrome] warm 6/15  witness 361.8 ms  prove 23106.8 ms
+[chrome] warm 7/15  witness 381.7 ms  prove 23147.2 ms
+[chrome] warm 8/15  witness 361.8 ms  prove 23108.1 ms
+[chrome] warm 9/15  witness 380.3 ms  prove 23108.9 ms
+[chrome] warm 10/15  witness 352.1 ms  prove 23159.2 ms
+[chrome] warm 11/15  witness 383.6 ms  prove 23199.4 ms
+[chrome] warm 12/15  witness 356.9 ms  prove 23165.3 ms
+[chrome] warm 13/15  witness 374.5 ms  prove 23123.9 ms
+[chrome] warm 14/15  witness 353.1 ms  prove 23208.1 ms
+[chrome] warm 15/15  witness 356.9 ms  prove 23118.7 ms
+[chrome] page memory: 318 MiB
+[chrome] DONE
+chrome T4.2 c1_18 threads=all: 10 warm runs | median total 23504.9 ms | median prove 23135.5 ms | all proofs verified: true
+All done 13:47:02

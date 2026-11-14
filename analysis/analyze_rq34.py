@@ -201,24 +201,38 @@ def thread_scaling(df, nk):
     return pd.DataFrame(out)
 
 
-def same_source(df, nk):
-    """WASM kernel stage time / native kernel stage time, identical Rust source."""
-    if nk.empty:
+def msm_algo_of(opt):
+    """'qap,ntt,msm:ba' -> 'ba'; 'msm' -> 'ark'; no msm -> 'ark' (native default)."""
+    for t in str(opt or "").split(","):
+        t = t.strip()
+        if t == "msm":
+            return "ark"
+        if t.startswith("msm:"):
+            return t.split(":", 1)[1]
+    return "ark"
+
+
+def same_source(df, nk_all):
+    """WASM kernel stage time / native kernel stage time, identical Rust source.
+    The native runs are matched to the MSM algorithm the WASM configuration used
+    (ALL and ALL-W use BEST_MSM, e.g. batch-affine), so S5 compares like with like."""
+    if nk_all.empty:
         return pd.DataFrame()
     out = []
     for (circ, th), g in df.groupby(["circuit", "threads"]):
-        x = nk[(nk.circuit == circ) & (nk.threads == th)]
-        if x.empty:
-            continue
         for cfg in ["ALL", "ALL-W"]:
             o = g[g.config == cfg]
             if o.empty:
                 continue
+            algo = msm_algo_of(o["opt"].iloc[0]) if "opt" in o else "ark"
+            x = nk_all[(nk_all.circuit == circ) & (nk_all.threads == th) & (nk_all.msm_algo == algo)]
+            if x.empty:
+                continue
             for s in STAGES:
                 xo, xn = o[s].to_numpy(), x[s].to_numpy()
                 lo, hi = ci(boot_median(xo) / boot_median(xn))
-                out.append({"circuit": circ, "k": int(o.k.iloc[0]), "threads": th, "wasm_build": cfg, "stage": STAGE_NAME[s],
-                            "wasm_ms": np.median(xo), "native_kernel_ms": np.median(xn),
+                out.append({"circuit": circ, "k": int(o.k.iloc[0]), "threads": th, "wasm_build": cfg, "msm_algo": algo,
+                            "stage": STAGE_NAME[s], "wasm_ms": np.median(xo), "native_kernel_ms": np.median(xn),
                             "wasm_over_native": np.median(xo) / np.median(xn), "ci95_lo": lo, "ci95_hi": hi})
     return pd.DataFrame(out)
 
@@ -434,7 +448,7 @@ def main():
     write(sp3, "rq3_speedup")
     write(sp4, "rq4_speedup")
     write(thread_scaling(df, nk), "rq34_thread_scaling")
-    write(same_source(df, nk), "rq34_same_source")
+    write(same_source(df, nk_all), "rq34_same_source")
     write(ported_msm(df, nk_all), "rq34_ported_msm")
     # 5% rule (same as RQ1): configurations whose total time varies too much get re-run once
     cv = (df.groupby(["config", "circuit", "threads"])["total_ms"]
